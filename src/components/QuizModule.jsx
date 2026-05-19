@@ -7,6 +7,8 @@ export default function QuizModule({ questions, onPass, alreadyPassed, initialSc
   const [done, setDone] = useState(alreadyPassed || false)
   const [finalScore, setFinalScore] = useState(alreadyPassed ? initialScore : null)
 
+  const allAnswered = questions.every((_, i) => answers[i] !== undefined)
+
   const handleSelect = (qIndex, optIndex) => {
     if (submitted[qIndex] || done) return
     setAnswers((prev) => ({ ...prev, [qIndex]: optIndex }))
@@ -14,15 +16,12 @@ export default function QuizModule({ questions, onPass, alreadyPassed, initialSc
 
   const handleSubmitQuestion = (qIndex) => {
     if (answers[qIndex] === undefined || submitted[qIndex]) return
-    setSubmitted((prev) => ({ ...prev, [qIndex]: true }))
+    const newSubmitted = { ...submitted, [qIndex]: true }
+    setSubmitted(newSubmitted)
 
-    const allAnswered = questions.every(
-      (_, i) => i === qIndex || submitted[i]
-    )
-    if (allAnswered) {
-      const score = questions.filter(
-        (q, i) => (i === qIndex ? answers[qIndex] : answers[i]) === q.answer
-      ).length
+    const allNowSubmitted = questions.every((_, i) => newSubmitted[i])
+    if (allNowSubmitted) {
+      const score = questions.filter((q, i) => answers[i] === q.answer).length
       const passed = score >= Math.ceil(questions.length * 0.5)
       setFinalScore(score)
       setDone(true)
@@ -30,14 +29,23 @@ export default function QuizModule({ questions, onPass, alreadyPassed, initialSc
     }
   }
 
-  const allSubmitted = questions.every((_, i) => submitted[i])
-
   const handleFinish = () => {
     const score = questions.filter((q, i) => answers[i] === q.answer).length
     const passed = score >= Math.ceil(questions.length * 0.5)
+    // Mark all questions as submitted so feedback shows
+    const allSub = {}
+    questions.forEach((_, i) => { allSub[i] = true })
+    setSubmitted(allSub)
     setFinalScore(score)
     setDone(true)
     onPass(score, questions.length, passed)
+  }
+
+  const handleRetry = () => {
+    setAnswers({})
+    setSubmitted({})
+    setDone(false)
+    setFinalScore(null)
   }
 
   const passed = finalScore !== null && finalScore >= Math.ceil(questions.length * 0.5)
@@ -50,15 +58,18 @@ export default function QuizModule({ questions, onPass, alreadyPassed, initialSc
         <div className={`${styles.result} ${passed ? styles.pass : styles.fail}`}>
           <strong>{passed ? '✓ Passed' : '✗ Not quite'}</strong>
           &nbsp;— You answered {finalScore} of {questions.length} correctly.
+          {passed && (
+            <span className={styles.passNote}> This topic has been marked as complete.</span>
+          )}
           {!passed && (
-            <span className={styles.retryNote}> Review the lesson and try again.</span>
+            <span className={styles.retryNote}> Review the lesson above and try again.</span>
           )}
         </div>
       )}
 
       <div className={styles.questions}>
         {questions.map((q, qi) => {
-          const isSubmitted = submitted[qi] || (done && alreadyPassed)
+          const isSubmitted = submitted[qi] || false
           const selected = answers[qi]
           const correct = q.answer
           const isCorrect = selected === correct
@@ -111,13 +122,29 @@ export default function QuizModule({ questions, onPass, alreadyPassed, initialSc
       </div>
 
       {!done && !alreadyPassed && (
-        <button
-          className={styles.finishBtn}
-          onClick={handleFinish}
-          disabled={Object.keys(answers).length < questions.length}
-        >
-          Submit Quiz
-        </button>
+        <div className={styles.finishRow}>
+          <button
+            className={styles.finishBtn}
+            onClick={handleFinish}
+            disabled={!allAnswered}
+            title={!allAnswered ? 'Answer all questions before submitting' : undefined}
+          >
+            Submit Quiz
+          </button>
+          {!allAnswered && (
+            <p className={styles.finishHint}>
+              Answer all {questions.length} questions to submit.
+            </p>
+          )}
+        </div>
+      )}
+
+      {done && !passed && !alreadyPassed && (
+        <div className={styles.retryRow}>
+          <button className={styles.retryBtn} onClick={handleRetry}>
+            Try Again
+          </button>
+        </div>
       )}
     </div>
   )

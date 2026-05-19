@@ -81,15 +81,15 @@
         "explanation": "Crystalline silicon panels lose approximately 0.3–0.5% of rated output per °C above the 25°C STC reference temperature."
       },
       {
-        "question": "What is the photovoltaic effect?",
+        "question": "What is the primary purpose of the p-n junction in a solar cell?",
         "options": [
-          "The heating of a surface when exposed to sunlight",
-          "The conversion of light energy into electrical energy using a semiconductor material",
-          "The reflection of photons off a polished silicon surface",
-          "The process by which solar panels store energy in a battery"
+          "To store electrical energy for use at night",
+          "To create an electric field that forces freed electrons to flow in one direction",
+          "To filter out infrared radiation from incoming sunlight",
+          "To convert DC electricity into AC electricity"
         ],
         "answer": 1,
-        "explanation": "The photovoltaic effect is the process by which photons of light knock electrons loose in a semiconductor, creating a voltage and usable electric current — the fundamental mechanism behind every solar cell."
+        "explanation": "The p-n junction creates a built-in electric field at the boundary between p-type and n-type semiconductor. This field forces freed electrons to flow in one direction, producing usable DC current — without it, electrons would recombine before generating any useful power."
       },
       {
         "question": "What does a higher solar cell efficiency rating mean in practice?",

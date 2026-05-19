@@ -35,6 +35,10 @@
   font-weight: 400;
 }
 
+.passNote {
+  font-weight: 400;
+}
+
 .questions {
   display: flex;
   flex-direction: column;
@@ -181,4 +185,39 @@
 .finishBtn:disabled {
   opacity: 0.4;
   cursor: default;
+}
+
+.finishRow {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.finishHint {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.retryRow {
+  margin-top: 1.5rem;
+}
+
+.retryBtn {
+  background: transparent;
+  color: var(--navy);
+  border: 1.5px solid var(--navy);
+  border-radius: 0;
+  padding: 0.5625rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.retryBtn:hover {
+  background: var(--navy);
+  color: #ffffff;
 }

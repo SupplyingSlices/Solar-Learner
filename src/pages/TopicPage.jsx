@@ -37,7 +37,6 @@ import topics from '../data/topics.json'
 import styles from './TopicPage.module.css'
 
 function TopicDiagram({ topic }) {
-  // If an image override is specified, render that instead of the SVG
   if (topic.diagramImage) {
     return (
       <div className={styles.diagramImageWrapper}>
@@ -82,12 +81,19 @@ export default function TopicPage() {
     )
   }
 
+  const topicIndex = topics.findIndex((t) => t.id === topicId)
+  const prevTopic = topicIndex > 0 ? topics[topicIndex - 1] : null
+  const nextTopic = topicIndex < topics.length - 1 ? topics[topicIndex + 1] : null
+
   const topicProgress = progress[topic.id] || {}
   const quizPassed = topicProgress.quizPassed || false
   const alreadyComplete = topicProgress.complete || false
 
   const handleQuizPass = (score, total, passed) => {
     recordQuizResult(topic.id, score, total, passed)
+    if (passed) {
+      markComplete(topic.id)
+    }
   }
 
   const handleMarkComplete = () => {
@@ -105,7 +111,12 @@ export default function TopicPage() {
 
       <main className={styles.main}>
         <div className={styles.inner}>
-          <Link to="/" className={styles.backLink}>← Back to Topics</Link>
+
+          <nav className={styles.breadcrumb} aria-label="Breadcrumb">
+            <Link to="/" className={styles.breadcrumbLink}>Home</Link>
+            <span className={styles.breadcrumbSep}>›</span>
+            <span className={styles.breadcrumbCurrent}>{topic.title}</span>
+          </nav>
 
           <div className={styles.metaRow}>
             <span className={styles.tag}>{topic.tag}</span>
@@ -116,15 +127,12 @@ export default function TopicPage() {
           <div className={styles.content}>
             <KeyTakeaways items={topic.keyTakeaways} />
 
-            {/* Concept diagram — shown before lesson text for visual priming */}
             {(topic.diagram || topic.diagramImage) && <TopicDiagram topic={topic} />}
 
             <LessonSections sections={topic.sections} diagramComponents={SECTION_DIAGRAMS} />
 
-            {/* Comparison table */}
             {topic.comparison && <ComparisonTable comparison={topic.comparison} />}
 
-            {/* Development / finance timeline */}
             {topic.timeline && <ProcessTimeline timeline={topic.timeline} />}
 
             <WhyItMatters text={topic.whyItMatters} />
@@ -141,6 +149,27 @@ export default function TopicPage() {
               onComplete={handleMarkComplete}
             />
           </div>
+
+          <nav className={styles.topicNav} aria-label="Topic navigation">
+            <div className={styles.topicNavPrev}>
+              {prevTopic && (
+                <Link to={`/topics/${prevTopic.id}`} className={styles.topicNavLink}>
+                  <span className={styles.topicNavDir}>← Previous</span>
+                  <span className={styles.topicNavTitle}>{prevTopic.title}</span>
+                </Link>
+              )}
+            </div>
+            <Link to="/" className={styles.topicNavHome}>All Topics</Link>
+            <div className={styles.topicNavNext}>
+              {nextTopic && (
+                <Link to={`/topics/${nextTopic.id}`} className={styles.topicNavLink}>
+                  <span className={styles.topicNavDir}>Next →</span>
+                  <span className={styles.topicNavTitle}>{nextTopic.title}</span>
+                </Link>
+              )}
+            </div>
+          </nav>
+
         </div>
       </main>
       <Footer />
