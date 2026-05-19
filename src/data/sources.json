@@ -308,6 +308,30 @@
         "year": "2023",
         "url": "https://emp.lbl.gov/publications/monetizing-federal-tax-incentives",
         "notes": "Source for tax equity market sizing, partnership flip structure mechanics, and back-leverage debt structuring."
+      },
+      {
+        "id": "bbb-pl-119-21",
+        "title": "One Big Beautiful Bill Act — Public Law 119-21",
+        "publisher": "U.S. Congress",
+        "year": "2025",
+        "url": "https://www.congress.gov/bill/119th-congress/house-bill/1/text",
+        "notes": "Primary statutory text of the One Big Beautiful Bill, signed July 4, 2025. Source for §45Y/§48E credit sunset at end-2027 for wind and solar, the 12-month construction-start grandfather rule, FEOC/PFE supply chain restrictions, elimination of the residential solar lease ITC, and preservation of transferability."
+      },
+      {
+        "id": "pillsbury-bbb-final",
+        "title": "Renewable Energy Tax Credits in the Big, Beautiful Bill: Final Status",
+        "publisher": "Pillsbury Winthrop Shaw Pittman LLP",
+        "year": "2025",
+        "url": "https://pillsburylaw.com/en/news-and-insights/renewable-energy-tax-credits-big-beautiful-bill-IRA.html",
+        "notes": "Authoritative legal analysis of the BBB's final provisions for renewable energy; source for details on the dropped excise tax (up to 30% for solar / 50% for wind), the PFE material assistance rules, and the nuclear fuel sourcing provisions."
+      },
+      {
+        "id": "irs-bbb-provisions",
+        "title": "One, Big, Beautiful Bill Provisions — IRS Summary",
+        "publisher": "Internal Revenue Service (IRS)",
+        "year": "2025",
+        "url": "https://www.irs.gov/newsroom/one-big-beautiful-bill-provisions",
+        "notes": "IRS summary of tax provisions in the BBB; includes interim guidance on FEOC/PFE material assistance cost ratios and safe harbor calculations for §45Y and §48E credit eligibility."
       }
     ]
   },

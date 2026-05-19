@@ -1229,14 +1229,14 @@
     "level": "Intermediate",
     "estimatedMinutes": 8,
     "keyTakeaways": [
-      "The IRA extended the 30% ITC through 2032 and added new bonus adders that can push effective credits to 50%+",
-      "Tax equity remains the primary vehicle for monetizing federal credits in US solar",
-      "Direct pay provisions in the IRA enable tax-exempt entities to receive credits as cash refunds for the first time"
+      "The IRA established a 30% ITC with bonus adders that can push effective credits above 50% — but the One Big Beautiful Bill (signed July 2025) moved the credit window for new wind and solar to projects placed in service by end-2027",
+      "Tax equity and transferability remain the primary vehicles for monetizing federal credits; transferability was preserved in the BBB",
+      "Under the BBB, projects must begin construction within 12 months of the July 4, 2025 enactment date to qualify for the grandfather rule — making construction-start documentation now a first-order diligence item"
     ],
     "sections": [
       {
         "heading": "Investment Tax Credit (ITC)",
-        "body": "The federal Investment Tax Credit (ITC) is essentially the government writing a check — not literally, but in the form of a dollar-for-dollar reduction in what a company owes in federal taxes. If a solar project costs $100 million to build and qualifies for a 30% ITC, the project owner can reduce its federal tax bill by $30 million in the year the project starts operating. This is not a deduction (which only reduces taxable income) — it is a direct offset against the actual tax owed, making it far more valuable. The IRA extended this 30% rate through 2032. To access the full 30%, projects must pay workers prevailing wages and use qualified apprentices during construction — otherwise the credit falls to just 6%. The ITC is taken in the single year the project is placed in service."
+        "body": "The federal Investment Tax Credit (ITC) is essentially the government writing a check — not literally, but in the form of a dollar-for-dollar reduction in what a company owes in federal taxes. If a solar project costs $100 million to build and qualifies for a 30% ITC, the project owner can reduce its federal tax bill by $30 million in the year the project starts operating. This is not a deduction (which only reduces taxable income) — it is a direct offset against the actual tax owed, making it far more valuable. The IRA established this 30% rate and structured the credit to step down beginning in 2033. To access the full 30%, projects must pay workers prevailing wages and use qualified apprentices during construction — otherwise the credit falls to just 6%. The ITC is taken in the single year the project is placed in service. Note: the One Big Beautiful Bill, signed July 4, 2025, significantly compressed this timeline for wind and solar — see the section below for details."
       },
       {
         "heading": "Accelerated depreciation (MACRS)",
@@ -1262,9 +1262,17 @@
       {
         "heading": "Debt capital markets",
         "body": "Utility-scale solar projects are financed with construction loans (typically floating rate, 12–24 month term), followed by long-term project finance debt (10–20 year term, fixed or hedged rate) or back-leverage at the holdco level. Term debt for contracted solar projects typically prices at 150–250 bps over SOFR (or equivalent), depending on credit quality, offtake counterparty, and market conditions. Institutional investors (insurance companies, pension funds) are active buyers of solar project bonds."
+      },
+      {
+        "heading": "The One Big Beautiful Bill: Narrowing the credit window",
+        "body": "The One Big Beautiful Bill (BBB), signed into law on July 4, 2025 (Public Law 119-21), is the most significant legislative revision to the IRA's clean energy incentive framework since the IRA itself was enacted in 2022. The central change for solar: wind and solar projects placed in service after December 31, 2027 are generally ineligible for the tech-neutral investment credit (§48E) and production credit (§45Y) that the IRA had extended toward the mid-2030s. This represents a roughly six-year compression of the originally anticipated credit window. There is one critical lifeline: a grandfather clause preserves full credit eligibility for wind and solar projects that begin construction within 12 months of the BBB's enactment — i.e., before approximately July 4, 2026. Projects that meet that construction-start deadline but are placed in service after 2027 are still eligible; projects that miss the construction window and are not in service by end-2027 lose the credit entirely. For advisors and investors, this has made construction commencement documentation — engineering contracts, equipment procurement, physical work on site — a primary diligence item in any acquisition or financing of development-stage solar assets. It has also created a bifurcated market: projects grandfathered under the old regime command a meaningful premium over projects that face uncertainty about credit eligibility."
+      },
+      {
+        "heading": "FEOC restrictions and what the BBB preserved",
+        "body": "Beyond the credit sunset, the BBB introduced new restrictions targeting equipment sourced from 'prohibited foreign entities' (PFEs) — broadly, companies with direct or indirect ties to China, Russia, Iran, or North Korea. Wind and solar projects that obtain a qualifying share of equipment from a PFE may lose their §45Y/§48E credit eligibility. Because Chinese manufacturers supply the majority of global solar modules and a large share of inverter and racking components (see The Industry module), FEOC compliance has become a first-order supply chain and diligence risk for new US solar projects. Advisors must now scrutinize bills of materials, component sourcing, and manufacturer ownership structures with the same rigor applied to offtake or interconnection risk. On the other side of the ledger, the BBB preserved several features the industry had fought hard to protect. Transferability — the IRA's simplified mechanism for selling tax credits to third-party corporate buyers — was largely retained for §45Y and §48E for the duration those credits remain available. A proposed excise tax of up to 30% on solar projects using PFE-sourced equipment, which had been described by industry participants as potentially fatal to new project economics, was dropped from the final legislation. The §48C advanced manufacturing credit was left untouched. Residential solar leases lost ITC eligibility for tax years beginning after enactment — a targeted change that primarily affects third-party ownership models in the residential market."
       }
     ],
-    "whyItMatters": "Tax credits and project finance structures are central to the economics of virtually every utility-scale solar project. Understanding how the ITC, bonus adders, tax equity, and debt interact — and how IRA provisions changed the landscape — is essential for interpreting financial models, advising on deal structure, or assessing the viability of a project or portfolio.",
+    "whyItMatters": "Tax credits and project finance structures are central to the economics of virtually every utility-scale solar project. Understanding how the ITC, bonus adders, tax equity, and debt interact — and how the One Big Beautiful Bill's 2027 credit sunset and FEOC restrictions have reshaped project timing, supply chain diligence, and investment risk — is now essential context for interpreting financial models, advising on deal structure, or assessing the viability of any project or portfolio in the US market.",
     "terms": [
       {
         "term": "ITC (Investment Tax Credit)",
@@ -1285,6 +1293,14 @@
       {
         "term": "Back-leverage",
         "definition": "Debt placed at the sponsor (holdco) level, secured by the equity interest in a project, used to supplement or replace project-level debt."
+      },
+      {
+        "term": "One Big Beautiful Bill (BBB)",
+        "definition": "Legislation signed July 4, 2025 (Public Law 119-21) that significantly modified IRA clean energy incentives, including moving the §45Y/§48E credit eligibility sunset for new wind and solar to end-2027 and introducing supply chain restrictions on equipment sourced from prohibited foreign entities."
+      },
+      {
+        "term": "Prohibited Foreign Entity (PFE)",
+        "definition": "Under the BBB, a company with direct or indirect ties to China, Russia, Iran, or North Korea; projects that obtain a qualifying share of their equipment from a PFE may lose eligibility for §45Y and §48E clean energy credits."
       }
     ],
     "chart": {
@@ -1442,6 +1458,17 @@
         ],
         "answer": 1,
         "explanation": "The energy community adder provides an additional 10% ITC for projects in communities historically dependent on fossil fuels — specifically areas with closed coal mines or plants, or census tracts with significant fossil fuel employment. It is one of the most accessible IRA adders and widely claimed in eligible markets."
+      },
+      {
+        "question": "Under the One Big Beautiful Bill (signed July 2025), what is the key deadline for new wind and solar projects to remain eligible for the §45Y/§48E clean energy credits?",
+        "options": [
+          "Projects must be placed in service by December 31, 2032, as originally set by the IRA",
+          "Projects must begin construction by December 31, 2030 and be placed in service by 2035",
+          "Projects must generally be placed in service by December 31, 2027 — or begin construction within 12 months of the BBB's enactment — to qualify",
+          "The BBB had no effect on the IRA's clean energy credit timeline"
+        ],
+        "answer": 2,
+        "explanation": "The BBB compressed the original IRA credit timeline significantly. Wind and solar projects placed in service after December 31, 2027 are generally ineligible for §45Y/§48E credits. The grandfather exception applies to projects that begin construction within 12 months of the July 4, 2025 enactment date (i.e., by approximately July 4, 2026) — making construction-start documentation a critical diligence item for any new US solar investment."
       }
     ]
   },
