@@ -1,0 +1,45 @@
+.wrapper {
+  background: var(--gray-light);
+  padding: 1.75rem;
+}
+
+.heading {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-navy);
+  margin-bottom: 1.25rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 0.5rem 1.5rem;
+  align-items: baseline;
+}
+
+.term {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-navy);
+}
+
+.definition {
+  font-size: 0.875rem;
+  color: var(--text-body);
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .entry {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}

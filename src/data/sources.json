@@ -1,0 +1,360 @@
+[
+  {
+    "topicId": "general",
+    "topicTitle": "General / Cross-Cutting",
+    "sources": [
+      {
+        "id": "nrel-best-cell",
+        "title": "Best Research-Cell Efficiency Chart",
+        "publisher": "National Renewable Energy Laboratory (NREL)",
+        "year": "Updated continuously",
+        "url": "https://www.nrel.gov/pv/cell-pv-eff-emergingpv.html",
+        "notes": "Primary source for all laboratory cell efficiency figures, including silicon, perovskite, and tandem records."
+      },
+      {
+        "id": "ira-text",
+        "title": "Inflation Reduction Act of 2022 — Sections 48, 48C, 48E",
+        "publisher": "U.S. Congress / IRS",
+        "year": "2022",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/5376/text",
+        "notes": "Primary statutory authority for ITC, PTC, domestic content adder, energy community adder, and direct pay/transferability provisions."
+      },
+      {
+        "id": "seia-outlook",
+        "title": "U.S. Solar Market Insight — 2025 Year in Review",
+        "publisher": "Solar Energy Industries Association (SEIA) / Wood Mackenzie",
+        "year": "2025",
+        "url": "https://seia.org/research-resources/solar-market-insight-report-2025-year-in-review",
+        "notes": "Primary source for US annual installation figures. US installed 43.2 GW in 2025 (fifth consecutive year as #1 new capacity source), down 14% from 2024's ~50 GW peak. Solar + storage represented 79% of all new US electricity capacity in 2025. Cumulative US capacity projected to reach 769 GWdc by 2036."
+      },
+      {
+        "id": "bnef-solar-outlook",
+        "title": "BloombergNEF Solar PV Market Outlook",
+        "publisher": "BloombergNEF (BNEF)",
+        "year": "2024/2025",
+        "url": "https://about.bnef.com/solar-energy-research/",
+        "notes": "Source for global module technology market share (TOPCon vs. PERC), Chinese manufacturing dominance figures, and module price trajectories."
+      }
+    ]
+  },
+  {
+    "topicId": "the-science",
+    "topicTitle": "The Science",
+    "sources": [
+      {
+        "id": "nrel-pv-basics",
+        "title": "Solar Photovoltaic Technology Basics",
+        "publisher": "National Renewable Energy Laboratory (NREL)",
+        "year": "2023",
+        "url": "https://www.nrel.gov/research/re-photovoltaics.html",
+        "notes": "Overview of the photovoltaic effect, p-n junction physics, and cell-to-system architecture."
+      },
+      {
+        "id": "iec-61215",
+        "title": "IEC 61215: Terrestrial Photovoltaic (PV) Modules — Design Qualification and Type Approval",
+        "publisher": "International Electrotechnical Commission (IEC)",
+        "year": "2021",
+        "url": "https://www.iec.ch/standards/iec-61215",
+        "notes": "Defines Standard Test Conditions (STC): 1,000 W/m² irradiance, 25°C cell temperature, AM1.5 spectrum."
+      },
+      {
+        "id": "pvwatts",
+        "title": "PVWatts Calculator — Technical Reference",
+        "publisher": "National Renewable Energy Laboratory (NREL)",
+        "year": "2023",
+        "url": "https://pvwatts.nrel.gov/pvwatts.php",
+        "notes": "Source for temperature coefficient effects on production; documents typical −0.3% to −0.5%/°C loss for crystalline silicon."
+      }
+    ]
+  },
+  {
+    "topicId": "panel-types",
+    "topicTitle": "Panel Types",
+    "sources": [
+      {
+        "id": "iea-pvps-2025",
+        "title": "Trends in Photovoltaic Applications 2025",
+        "publisher": "IEA Photovoltaic Power Systems Programme (PVPS)",
+        "year": "2025",
+        "url": "https://iea-pvps.org/trends_reports/trends-2025/",
+        "notes": "Annual global PV market report. TOPCon is confirmed as the mainstream product globally; N-type technologies now represent ~70% of global production; bifacial modules exceed 75% of production. China controls ~92% of polysilicon and ~85% of module production capacity. Global cumulative PV surpassed 2,260 GW at end-2024."
+      },
+      {
+        "id": "nrel-efficiency-chart",
+        "title": "Best Research-Cell Efficiency Chart",
+        "publisher": "NREL",
+        "year": "2025",
+        "url": "https://www.nrel.gov/pv/cell-pv-eff-emergingpv.html",
+        "notes": "Source for TOPCon commercial efficiency range (24–26%) and HJT/IBC benchmarks."
+      },
+      {
+        "id": "first-solar-tech",
+        "title": "First Solar Series 7 Module Datasheet and Technology Overview",
+        "publisher": "First Solar",
+        "year": "2024",
+        "url": "https://www.firstsolar.com/Modules/Series-7",
+        "notes": "Source for CdTe module efficiency (18–20%), bifacial performance, and utility-scale market positioning."
+      },
+      {
+        "id": "wood-mac-module",
+        "title": "Global Solar PV Module Market Outlook",
+        "publisher": "Wood Mackenzie",
+        "year": "2024",
+        "url": "https://www.woodmac.com/reports/power-markets-solar-pv-market-outlook/",
+        "notes": "Source for module cost per watt by technology and polycrystalline obsolescence trend."
+      }
+    ]
+  },
+  {
+    "topicId": "home-systems",
+    "topicTitle": "Home Systems",
+    "sources": [
+      {
+        "id": "nrel-res-benchmark",
+        "title": "U.S. Solar Photovoltaic System and Energy Storage Cost Benchmarks — Q1 2025",
+        "publisher": "National Renewable Energy Laboratory (NREL)",
+        "year": "2025",
+        "url": "https://www.osti.gov/servlets/purl/3009689",
+        "notes": "Latest NREL cost benchmark release. Reported residential installed costs range from $2.30–$4.40/W DC; bottom-up benchmark range is $2.70–$4.20/W DC. Utility-scale modeled market price (MMP) is ~$1.12/Wdc; minimum sustainable price (MSP, without tariff distortions) is ~$0.98/Wdc."
+      },
+      {
+        "id": "lbnl-tracking-sun",
+        "title": "Tracking the Sun: Pricing and Design Trends for Distributed Photovoltaic Systems — 2024 Edition",
+        "publisher": "Lawrence Berkeley National Laboratory (LBNL)",
+        "year": "2024",
+        "url": "https://emp.lbl.gov/tracking-sun-2024-edition",
+        "notes": "Latest edition (released October 2024, covering data through end-2023). Median residential system size reached 7.4 kW in 2023. Battery storage attachment rate reached 12% nationally and ~60% in California under NEM 3.0. Median residential installed price declined ~$0.10/Wdc from 2022 to 2023."
+      },
+      {
+        "id": "cpuc-nem3",
+        "title": "Net Energy Metering Tariff Successor (NEM 3.0) Decision",
+        "publisher": "California Public Utilities Commission (CPUC)",
+        "year": "2023",
+        "url": "https://www.cpuc.ca.gov/nemrevisit",
+        "notes": "Primary source for California's NEM 3.0 export rate reductions and their impact on residential payback periods."
+      },
+      {
+        "id": "seia-nem-map",
+        "title": "Net Metering Policy Map",
+        "publisher": "Solar Energy Industries Association (SEIA)",
+        "year": "2024",
+        "url": "https://www.seia.org/research-resources/net-metering",
+        "notes": "State-by-state summary of net metering policies, export tariff structures, and payback period implications."
+      }
+    ]
+  },
+  {
+    "topicId": "utility-scale",
+    "topicTitle": "Utility Scale",
+    "sources": [
+      {
+        "id": "nrel-utility-benchmark",
+        "title": "U.S. Solar Photovoltaic System and Energy Storage Cost Benchmarks — Q1 2025",
+        "publisher": "NREL",
+        "year": "2025",
+        "url": "https://www.osti.gov/servlets/purl/3009689",
+        "notes": "Latest benchmark. Utility-scale modeled market price (MMP) is ~$1.12/Wdc; minimum sustainable price (MSP) excluding tariff distortions is ~$0.98/Wdc. With 2.4 hours of co-located battery storage, combined system cost rises to $1.99/Wdc (MMP)."
+      },
+      {
+        "id": "lbnl-utility-solar",
+        "title": "Utility-Scale Solar, 2024 Edition: Empirical Trends in Deployment, Technology, Cost, Performance, PPA Pricing, and Value",
+        "publisher": "Lawrence Berkeley National Laboratory (LBNL)",
+        "year": "2024",
+        "url": "https://emp.lbl.gov/publications/utility-scale-solar-2024-edition",
+        "notes": "Covers data through 2023; 2025 Edition also available (data.openei.org/submissions/8541). Installed costs declined 8% to $1.43/WAC in 2023. Newly signed PPA prices averaged $35/MWh (levelized, 2023$). LCOE of $46/MWh before credits, $31/MWh after. Over 1,085 GW of solar in interconnection queues, with 53% paired with storage. 52 new PV+battery hybrid plants set a 2023 record."
+      },
+      {
+        "id": "lbnl-queued-up",
+        "title": "Queued Up: 2025 Edition — Characteristics of Power Plants Seeking Transmission Interconnection as of End of 2024",
+        "publisher": "Lawrence Berkeley National Laboratory (LBNL)",
+        "year": "2025",
+        "url": "https://energyanalysis.lbl.gov/publications/queued-2025-edition-characteristics",
+        "notes": "Latest edition. As of end-2024: ~1,400 GW of generation capacity and ~890 GW of storage in active queues (solar alone: 956 GW). Active queue volume declined 12% year-over-year as record withdrawals (700+ GW) outpaced new submissions. Only 13% of capacity requesting interconnection from 2000–2019 had reached commercial operation by end-2024; 77% had withdrawn. Median queue time has doubled to 4+ years."
+      },
+      {
+        "id": "ferc-order-2023",
+        "title": "Order 2023: Improvements to Generator Interconnection Procedures and Agreements",
+        "publisher": "Federal Energy Regulatory Commission (FERC)",
+        "year": "2023",
+        "url": "https://www.ferc.gov/media/order-no-2023",
+        "notes": "Source for interconnection queue reform — cluster study methodology replacing first-come-first-served approach."
+      },
+      {
+        "id": "levelten-ppa",
+        "title": "PPA Price Index — North America",
+        "publisher": "LevelTen Energy",
+        "year": "2024/2025",
+        "url": "https://leveltenenergy.com/ppa-price-index",
+        "notes": "Quarterly PPA market pricing data by region; source for $25–$50/MWh utility-scale PPA range cited in the module."
+      }
+    ]
+  },
+  {
+    "topicId": "storage-batteries",
+    "topicTitle": "Storage & Batteries",
+    "sources": [
+      {
+        "id": "bnef-bess-outlook",
+        "title": "2025 Lithium-Ion Battery Price Survey",
+        "publisher": "BloombergNEF (BNEF)",
+        "year": "2025",
+        "url": "https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-fall-to-108-per-kilowatt-hour-despite-rising-metal-prices-bloombergnef/",
+        "notes": "2025 annual battery price survey. Global average li-ion pack price: $108/kWh (down 8% from 2024). Stationary storage (BESS) segment hit a new low of $70/kWh in 2025 — a 45% drop from 2024 — becoming the lowest-priced application for the first time. LFP average: $81/kWh across all segments; NMC: $128/kWh. North American prices remain ~44% above China. BNEF expects further declines in 2026."
+      },
+      {
+        "id": "nrel-bess-benchmark",
+        "title": "U.S. Solar Photovoltaic System and Energy Storage Cost Benchmarks — Q1 2025",
+        "publisher": "NREL",
+        "year": "2025",
+        "url": "https://www.osti.gov/servlets/purl/3009689",
+        "notes": "Source for all-in installed US BESS cost range including BOS, installation, and interconnection. Pack-level costs (per BNEF) are materially lower than total installed costs, which include balance-of-system, integration, and soft costs."
+      },
+      {
+        "id": "irs-itc-storage",
+        "title": "IRS Notice 2023-29: Standalone Energy Storage ITC Guidance",
+        "publisher": "Internal Revenue Service (IRS)",
+        "year": "2023",
+        "url": "https://www.irs.gov/pub/irs-drop/n-23-29.pdf",
+        "notes": "Confirms 4-hour minimum duration for standalone BESS to qualify for the full 30% ITC under the IRA."
+      },
+      {
+        "id": "nrel-lfp-cycle",
+        "title": "Grid-Scale Battery Storage: Frequently Asked Questions",
+        "publisher": "NREL",
+        "year": "2023",
+        "url": "https://www.nrel.gov/docs/fy19osti/74426.pdf",
+        "notes": "Source for LFP cycle life (4,000–6,000 cycles) vs NMC cycle life (2,000–3,000 cycles) comparison."
+      }
+    ]
+  },
+  {
+    "topicId": "the-industry",
+    "topicTitle": "The Industry",
+    "sources": [
+      {
+        "id": "iea-pvps-mfg",
+        "title": "Trends in Photovoltaic Applications 2025",
+        "publisher": "IEA Photovoltaic Power Systems Programme (PVPS)",
+        "year": "2025",
+        "url": "https://iea-pvps.org/trends_reports/trends-2025/",
+        "notes": "Source for updated China manufacturing dominance figures: ~92% of polysilicon and ~85% of global module production. N-type technologies (primarily TOPCon) now ~70% of global production. Bifacial modules exceed 75% of production."
+      },
+      {
+        "id": "seia-market-insight",
+        "title": "U.S. Solar Market Insight — 2025 Year in Review",
+        "publisher": "SEIA / Wood Mackenzie",
+        "year": "2025",
+        "url": "https://seia.org/research-resources/solar-market-insight-report-2025-year-in-review",
+        "notes": "US installed 43.2 GW in 2025 — utility-scale (34.7 GW), residential (4.6 GW), commercial (2.3 GW). Utility-scale share fell slightly to ~80% of total. US module manufacturing capacity grew 50%+ in 2025 to 65.5 GW online, with full domestic supply chain now established in polysilicon through modules — though production still below domestic demand."
+      },
+      {
+        "id": "novogradac-tax-equity",
+        "title": "Renewable Energy Tax Credit Resource Center",
+        "publisher": "Novogradac",
+        "year": "2024",
+        "url": "https://www.novoco.com/resource-centers/renewable-energy-tax-credits",
+        "notes": "Practical reference for tax equity partnership flip structures, typical economics (35–40% capital share), and IRA transferability mechanics."
+      },
+      {
+        "id": "seia-tariff-timeline",
+        "title": "Solar Trade Policy and Tariff Overview",
+        "publisher": "SEIA",
+        "year": "2024",
+        "url": "https://www.seia.org/research-resources/solar-trade",
+        "notes": "Source for Section 201/301 tariff history, AD/CVD proceedings, and the 2022 circumvention investigation / tariff moratorium."
+      }
+    ]
+  },
+  {
+    "topicId": "financing-incentives",
+    "topicTitle": "Financing & Incentives",
+    "sources": [
+      {
+        "id": "irs-notice-2022-61",
+        "title": "IRS Notice 2022-61: Prevailing Wage and Apprenticeship Requirements",
+        "publisher": "Internal Revenue Service (IRS)",
+        "year": "2022",
+        "url": "https://www.irs.gov/pub/irs-drop/n-22-61.pdf",
+        "notes": "Defines the prevailing wage and apprenticeship (PWA) requirements that must be met to unlock the full 30% ITC (vs. 6% base rate)."
+      },
+      {
+        "id": "irs-notice-2023-29-dc",
+        "title": "IRS Notice 2023-29: Energy Community Bonus Credit",
+        "publisher": "Internal Revenue Service (IRS)",
+        "year": "2023",
+        "url": "https://www.irs.gov/pub/irs-drop/n-23-29.pdf",
+        "notes": "Defines energy community eligibility for the 10% ITC adder; references coal closure communities and fossil fuel employment communities."
+      },
+      {
+        "id": "irs-notice-2023-38",
+        "title": "IRS Notice 2023-38: Domestic Content Bonus Credit Guidance",
+        "publisher": "Internal Revenue Service (IRS)",
+        "year": "2023",
+        "url": "https://www.irs.gov/pub/irs-drop/n-23-38.pdf",
+        "notes": "Primary source for domestic content requirements (steel/iron + manufactured components) to qualify for the 10% ITC adder."
+      },
+      {
+        "id": "ira-section-48e",
+        "title": "IRA Section 48E: Clean Energy Investment Credit (Technology-Neutral ITC/PTC)",
+        "publisher": "U.S. Congress / IRS",
+        "year": "2022",
+        "url": "https://www.congress.gov/bill/117th-congress/house-bill/5376/text",
+        "notes": "Source for the PTC election option for solar post-2024 (~$0.028/kWh for 10 years, inflation-adjusted)."
+      },
+      {
+        "id": "lbnl-tax-equity",
+        "title": "Monetizing Federal Tax Incentives for Renewable Energy",
+        "publisher": "Lawrence Berkeley National Laboratory (LBNL)",
+        "year": "2023",
+        "url": "https://emp.lbl.gov/publications/monetizing-federal-tax-incentives",
+        "notes": "Source for tax equity market sizing, partnership flip structure mechanics, and back-leverage debt structuring."
+      }
+    ]
+  },
+  {
+    "topicId": "future-tech",
+    "topicTitle": "Future Tech",
+    "sources": [
+      {
+        "id": "nrel-eff-chart-future",
+        "title": "Best Research-Cell Efficiency Chart (Interactive)",
+        "publisher": "NREL",
+        "year": "Updated December 2025",
+        "url": "https://www.nrel.gov/pv/interactive-cell-efficiency.html",
+        "notes": "Current records as of December 2025: perovskite/silicon tandem (hybrid, 2-terminal) at 36.1% (FhG-ISE/AMOLF); HZB at 35.0%. Single-junction perovskite at >26%. Crystalline silicon at ~27%. NREL restructured the chart in 2024 to create a dedicated 'Hybrid Tandems' category. All records are verified by independent testing labs."
+      },
+      {
+        "id": "oxford-pv-record",
+        "title": "Oxford PV sets new world record for perovskite solar cell",
+        "publisher": "Oxford PV",
+        "year": "2023",
+        "url": "https://www.oxfordpv.com/news/oxford-pv-sets-new-world-record-solar-cell",
+        "notes": "Source for Oxford PV's certified perovskite-silicon tandem efficiency milestone, referenced in the tandem cell commercialization section."
+      },
+      {
+        "id": "nature-perovskite-stability",
+        "title": "Perovskite solar cells: stability and commercialisation",
+        "publisher": "Nature Reviews Materials",
+        "year": "2023",
+        "url": "https://www.nature.com/articles/s41578-023-00598-4",
+        "notes": "Peer-reviewed source for perovskite commercialization barriers: humidity/UV/thermal degradation and lead toxicity concerns."
+      },
+      {
+        "id": "nrel-agrivoltaics",
+        "title": "Agrivoltaics: Opportunities for Agriculture and the Environment",
+        "publisher": "NREL",
+        "year": "2023",
+        "url": "https://www.nrel.gov/docs/fy23osti/85834.pdf",
+        "notes": "Source for crop yield data under solar panels, agrivoltaic design configurations, and US state permitting developments."
+      },
+      {
+        "id": "nrel-floatovoltaics",
+        "title": "Floating Photovoltaic Systems: Assessing the Technical Potential",
+        "publisher": "NREL",
+        "year": "2022",
+        "url": "https://www.nrel.gov/docs/fy22osti/83286.pdf",
+        "notes": "Source for US floating solar technical potential, cooling effect benefits, and evaporation reduction data."
+      }
+    ]
+  }
+]

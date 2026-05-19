@@ -1,0 +1,49 @@
+.footer {
+  background: var(--navy);
+  margin-top: auto;
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.brand {
+  color: #ffffff;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.divider {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.sub {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8125rem;
+}
+
+.sourcesLink {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.75rem;
+  text-decoration: none;
+  margin-left: auto;
+  transition: color 0.15s ease;
+}
+
+.sourcesLink:hover {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: underline;
+}
+
+.copy {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.75rem;
+}

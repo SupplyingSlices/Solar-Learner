@@ -1,0 +1,1847 @@
+[
+  {
+    "id": "the-science",
+    "title": "The Science",
+    "summary": "How sunlight becomes electricity — photons, electrons, and the p-n junction",
+    "tag": "Physics",
+    "icon": "⚡",
+    "level": "Beginner",
+    "estimatedMinutes": 10,
+    "keyTakeaways": [
+      "The photovoltaic effect converts photons directly into DC electricity with no moving parts",
+      "A p-n junction is the fundamental building block of every solar cell",
+      "Solar irradiance — measured in W/m² — is the primary driver of energy production"
+    ],
+    "sections": [
+      {
+        "heading": "The photovoltaic effect",
+        "body": "When photons from sunlight strike a semiconductor material, they transfer energy to electrons, knocking them loose and allowing them to flow as direct current (DC). This photovoltaic (PV) effect was first described by Edmond Becquerel in 1839 and remains the foundation of all solar PV technology today."
+      },
+      {
+        "heading": "The p-n junction",
+        "body": "Solar cells are built around a p-n junction — a boundary between positively doped (p-type) and negatively doped (n-type) semiconductor material. This junction creates an electric field that forces freed electrons to flow in one direction, producing usable current. The quality and architecture of this junction largely determines a cell's efficiency."
+      },
+      {
+        "heading": "From cell to system",
+        "body": "Individual cells are connected in series and parallel within a module (panel). Modules connect into strings, strings into arrays. An inverter then converts the DC output to AC electricity compatible with the grid or building loads. Each step introduces small losses, so system efficiency is always lower than cell efficiency."
+      },
+      {
+        "heading": "Irradiance and temperature",
+        "body": "Energy production scales with solar irradiance — the power of sunlight hitting a surface, expressed in watts per square meter (W/m²). Peak Standard Test Conditions (STC) assume 1,000 W/m². Crucially, panels lose roughly 0.3–0.5% of output per degree Celsius above 25°C, meaning hot climates can underperform modeled yields if this temperature coefficient is not properly accounted for."
+      }
+    ],
+    "whyItMatters": "A working knowledge of the photovoltaic effect is the foundation for understanding every technical and financial claim in solar. Efficiency ratings, degradation assumptions, energy yield models, and equipment warranties all trace back to cell physics — and advisors who understand the science are better equipped to ask the right questions and spot weak assumptions in technical reports.",
+    "terms": [
+      {
+        "term": "Photovoltaic effect",
+        "definition": "The physical process by which certain materials generate electric current when exposed to light, discovered by Edmond Becquerel in 1839."
+      },
+      {
+        "term": "p-n junction",
+        "definition": "The interface between positively doped and negatively doped semiconductor layers within a solar cell; the electric field here drives electron flow."
+      },
+      {
+        "term": "STC (Standard Test Conditions)",
+        "definition": "The standardized lab conditions at which solar panels are rated: 1,000 W/m² irradiance, 25°C cell temperature, AM1.5 spectrum."
+      },
+      {
+        "term": "DC / AC",
+        "definition": "Solar cells produce direct current (DC); an inverter converts it to alternating current (AC) for grid interconnection and most building loads."
+      },
+      {
+        "term": "Temperature coefficient",
+        "definition": "The rate at which a panel's output drops as temperature rises above 25°C — typically −0.3% to −0.5% per °C for crystalline silicon."
+      }
+    ],
+    "diagramImage": {
+      "title": "How a Solar Cell Works: The p-n Junction",
+      "url": "/charts/P-N Junction Diagram.png"
+    },
+    "quiz": [
+      {
+        "question": "What is the photovoltaic effect?",
+        "options": [
+          "Conversion of heat into electricity via a turbine",
+          "Conversion of photons into electrical current via a semiconductor",
+          "Reflection of sunlight to heat a fluid",
+          "Storage of electrical energy in a chemical cell"
+        ],
+        "answer": 1,
+        "explanation": "The photovoltaic effect converts photons (light particles) directly into DC electricity through a semiconductor — no turbine or heat transfer required."
+      },
+      {
+        "question": "What happens to panel output as temperature rises above 25°C?",
+        "options": [
+          "Output increases linearly",
+          "Output is unaffected",
+          "Output decreases by roughly 0.3–0.5% per degree Celsius",
+          "Output doubles"
+        ],
+        "answer": 2,
+        "explanation": "Crystalline silicon panels lose approximately 0.3–0.5% of rated output per °C above the 25°C STC reference temperature."
+      },
+      {
+        "question": "What is the photovoltaic effect?",
+        "options": [
+          "The heating of a surface when exposed to sunlight",
+          "The conversion of light energy into electrical energy using a semiconductor material",
+          "The reflection of photons off a polished silicon surface",
+          "The process by which solar panels store energy in a battery"
+        ],
+        "answer": 1,
+        "explanation": "The photovoltaic effect is the process by which photons of light knock electrons loose in a semiconductor, creating a voltage and usable electric current — the fundamental mechanism behind every solar cell."
+      },
+      {
+        "question": "What does a higher solar cell efficiency rating mean in practice?",
+        "options": [
+          "The cell degrades more slowly over time",
+          "The cell converts a greater share of incoming sunlight into electricity",
+          "The cell operates better in cold climates",
+          "The cell requires less inverter capacity"
+        ],
+        "answer": 1,
+        "explanation": "Efficiency is the percentage of incident solar energy converted to electrical output. A higher efficiency means more power from the same surface area — allowing smaller or fewer panels to produce equivalent output."
+      },
+      {
+        "question": "Why does module output degrade over time?",
+        "options": [
+          "Inverters gradually reduce their output to protect the modules",
+          "Physical and chemical changes in the semiconductor material reduce conversion efficiency",
+          "Net metering policies reduce the value of output over time",
+          "Silicon naturally reverts to its raw form when exposed to UV light"
+        ],
+        "answer": 1,
+        "explanation": "Degradation results from physical and chemical changes in the semiconductor — including UV-induced discoloration of encapsulants, micro-cracking, and potential-induced degradation (PID). Standard warranties assume ~0.5% annual degradation."
+      }
+    ]
+  },
+  {
+    "id": "panel-types",
+    "title": "Panel Types",
+    "summary": "Mono, poly, thin-film, bifacial — efficiency vs cost tradeoffs",
+    "tag": "Products",
+    "icon": "🔲",
+    "level": "Beginner",
+    "estimatedMinutes": 8,
+    "keyTakeaways": [
+      "N-type technologies now represent ~70% of global PV production, with TOPCon confirmed as the mainstream product (IEA PVPS 2025)",
+      "Bifacial modules now exceed 75% of global production — the standard for utility-scale TOPCon deployments",
+      "Thin-film (primarily CdTe) remains almost exclusively a utility-scale product in the US"
+    ],
+    "sections": [
+      {
+        "heading": "Monocrystalline silicon",
+        "body": "Monocrystalline (mono-Si) panels are made from a single continuous silicon crystal. They offer the highest efficiency among mass-market products — typically 21–23% at module level today — and have become cost-competitive with polycrystalline as manufacturing scale has grown. They are now the default choice for virtually all new installations."
+      },
+      {
+        "heading": "Polycrystalline silicon",
+        "body": "Polycrystalline (poly-Si) panels, once dominant through the early 2010s, are made by melting and casting silicon into blocks with multiple crystal grains. Their lower efficiency (17–19%) and similar cost to modern monocrystalline have made them largely obsolete for new projects. Very little new polycrystalline capacity is being manufactured as of 2025."
+      },
+      {
+        "heading": "N-type vs. P-type",
+        "body": "Within monocrystalline, the distinction between N-type and P-type architectures is now commercially significant. P-type PERC dominated from roughly 2017–2023. N-type TOPCon began displacing it in 2023–2024 due to higher efficiency (24–26%), lower light-induced degradation, and better temperature coefficients. HJT (heterojunction) and IBC are premium N-type alternatives used in higher-end residential and specialty applications."
+      },
+      {
+        "heading": "Thin-film (CdTe and CIGS)",
+        "body": "Thin-film panels deposit semiconductor material in extremely thin layers onto glass or flexible substrates. First Solar's cadmium telluride (CdTe) technology is the only large-scale thin-film manufacturer in the US, serving utility-scale markets with competitive pricing and strong bifacial and tracker compatibility. CIGS thin-film exists but has limited commercial scale."
+      },
+      {
+        "heading": "Bifacial modules",
+        "body": "Bifacial modules capture light from both the front and rear surfaces. When mounted on trackers over high-albedo ground (light-colored gravel, white geomembranes), bifacial gain can add 5–15% to energy yield. Bifacial is now the standard architecture for utility-scale monocrystalline TOPCon modules."
+      }
+    ],
+    "whyItMatters": "Panel technology choices directly affect a project's cost structure, energy output, degradation profile, and warranty exposure. Being able to distinguish between cell architectures — and understanding why a developer chose one over another — is essential context for reviewing EPC contracts, energy models, or any commercial assessment of a solar asset.",
+    "terms": [
+      {
+        "term": "TOPCon",
+        "definition": "Tunnel Oxide Passivated Contact — the leading N-type solar cell technology as of 2025, offering 24–26% commercial efficiency."
+      },
+      {
+        "term": "PERC",
+        "definition": "Passivated Emitter and Rear Cell — the dominant P-type technology from 2017–2023, now in managed decline as TOPCon takes over."
+      },
+      {
+        "term": "c-Si",
+        "definition": "Crystalline silicon — the dominant material family used in solar PV modules, encompassing both monocrystalline and polycrystalline variants."
+      },
+      {
+        "term": "Bifacial",
+        "definition": "A module design that captures reflected light from the ground on its rear surface, increasing energy yield by 5–15% in favorable site conditions."
+      },
+      {
+        "term": "CdTe",
+        "definition": "Cadmium telluride — the primary thin-film PV technology, used almost exclusively at utility scale in the US by First Solar."
+      }
+    ],
+    "diagram": "panel-types-diagram",
+    "diagramImage": {
+      "url": "/charts/Solar Panel Comparison Type.png",
+      "title": "Solar Panel Type Comparison",
+      "caption": "Comparative overview of solar panel technologies by architecture, efficiency, and market application."
+    },
+    "chart": {
+      "type": "bar",
+      "title": "Module Efficiency by Technology (2025)",
+      "xKey": "technology",
+      "bars": [
+        {
+          "key": "efficiency",
+          "label": "Typical Module Efficiency (%)",
+          "color": "#1B2A4A"
+        }
+      ],
+      "data": [
+        {
+          "technology": "TOPCon (N-type)",
+          "efficiency": 23.5
+        },
+        {
+          "technology": "HJT (N-type)",
+          "efficiency": 22.5
+        },
+        {
+          "technology": "PERC (P-type)",
+          "efficiency": 21
+        },
+        {
+          "technology": "CdTe Thin-Film",
+          "efficiency": 19
+        },
+        {
+          "technology": "Polycrystalline",
+          "efficiency": 18
+        }
+      ]
+    },
+    "comparison": {
+      "title": "Technology Comparison",
+      "headers": [
+        "Technology",
+        "Type",
+        "Efficiency",
+        "Cost/W",
+        "Best Use",
+        "Status"
+      ],
+      "rows": [
+        [
+          "TOPCon",
+          "N-type mono",
+          "22–24%",
+          "$0.18–0.22",
+          "Utility & C&I",
+          "Market leader"
+        ],
+        [
+          "PERC",
+          "P-type mono",
+          "20–22%",
+          "$0.16–0.20",
+          "All segments",
+          "Declining"
+        ],
+        [
+          "HJT",
+          "N-type mono",
+          "22–24%",
+          "$0.22–0.28",
+          "Premium residential",
+          "Growing"
+        ],
+        [
+          "CdTe (First Solar)",
+          "Thin-film",
+          "18–20%",
+          "$0.20–0.25",
+          "Utility-scale US",
+          "Niche leader"
+        ],
+        [
+          "Polycrystalline",
+          "P-type poly",
+          "17–19%",
+          "$0.14–0.18",
+          "Legacy only",
+          "End of life"
+        ]
+      ],
+      "highlightCol": 5
+    },
+    "quiz": [
+      {
+        "question": "Which panel technology now dominates over 95% of new solar installations?",
+        "options": [
+          "Polycrystalline",
+          "Monocrystalline",
+          "Thin-film CdTe",
+          "Amorphous silicon"
+        ],
+        "answer": 1,
+        "explanation": "Monocrystalline displaced polycrystalline by 2024 as manufacturing costs converged and efficiency advantages became decisive."
+      },
+      {
+        "question": "What does TOPCon stand for?",
+        "options": [
+          "Total Output Passivated Conductor",
+          "Tunnel Oxide Passivated Contact",
+          "Top-Contact Optimized Cell",
+          "Thermal Oxide Printed Contact"
+        ],
+        "answer": 1,
+        "explanation": "TOPCon stands for Tunnel Oxide Passivated Contact, an N-type cell architecture that became the global mainstream technology in 2024."
+      },
+      {
+        "question": "What is the key advantage of bifacial modules over standard monofacial modules?",
+        "options": [
+          "They are significantly cheaper to manufacture",
+          "They generate power from both the front and rear surfaces, increasing total yield",
+          "They do not require racking or mounting hardware",
+          "They have a longer warranty period by regulation"
+        ],
+        "answer": 1,
+        "explanation": "Bifacial modules capture reflected light (albedo) from the ground or roof surface on their rear side, typically boosting energy yield by 5–15% depending on ground reflectivity and mounting height."
+      },
+      {
+        "question": "Why is polycrystalline silicon largely obsolete in new solar installations?",
+        "options": [
+          "It was banned by environmental regulations due to cadmium content",
+          "Monocrystalline manufacturing costs converged with polycrystalline while offering higher efficiency",
+          "Polycrystalline modules cannot be used with modern string inverters",
+          "Grid codes now require minimum efficiency thresholds that polycrystalline cannot meet"
+        ],
+        "answer": 1,
+        "explanation": "As monocrystalline manufacturing scaled, the cost premium over polycrystalline effectively disappeared while efficiency remained meaningfully higher. By 2024, monocrystalline accounted for over 95% of new global production."
+      },
+      {
+        "question": "In what market segment does CdTe thin-film (First Solar) hold a significant competitive position?",
+        "options": [
+          "Residential rooftop in Europe",
+          "Utility-scale solar in the United States",
+          "Commercial rooftop in Southeast Asia",
+          "Portable and off-grid applications globally"
+        ],
+        "answer": 1,
+        "explanation": "First Solar's CdTe thin-film technology is manufactured domestically in the US and qualifies for IRA domestic content incentives, giving it a structural advantage in US utility-scale procurement despite lower efficiency than top crystalline silicon modules."
+      }
+    ]
+  },
+  {
+    "id": "balance-of-system",
+    "title": "Solar System Components",
+    "summary": "The major equipment in a solar project beyond the panels — what each component does and how it varies by system size",
+    "tag": "Equipment",
+    "icon": "⚙️",
+    "level": "Beginner",
+    "estimatedMinutes": 8,
+    "keyTakeaways": [
+      "Inverters are the most critical non-panel component — they convert DC electricity from panels into usable AC power",
+      "Racking, trackers, wiring, and switchgear typically account for 25–35% of total installed cost at utility scale",
+      "Equipment complexity and redundancy increase significantly as you move from residential to utility-scale systems"
+    ],
+    "diagramImage": {
+      "title": "Solar System Components",
+      "url": "/charts/Solar System components.png"
+    },
+    "sections": [
+      {
+        "heading": "Inverters",
+        "body": "Inverters convert the direct current (DC) electricity generated by solar panels into alternating current (AC) used by homes, businesses, and the grid. There are four main types: string inverters (one unit handles a row of panels — common in residential and small commercial), microinverters (one per panel — maximizes output when shading is a concern), central inverters (large single units handling MW-scale arrays — standard at utility scale), and hybrid/battery inverters (combine solar inversion with battery charge/discharge management). Inverter efficiency runs 97–99% in modern units. Utility-scale projects use central string inverters in the 4–5 MW range, often housed in prefabricated inverter stations."
+      },
+      {
+        "heading": "Racking and mounting structures",
+        "body": "Racking holds panels in place and determines their tilt and orientation. Residential systems use roof-mount racking attached to rafters, typically aluminum rail systems. Ground-mount systems use steel posts driven into the soil, supporting tilted rows of panels. Single-axis trackers (SATs) rotate panels east-to-west throughout the day, boosting energy yield by 15–25% versus fixed tilt — now standard at utility scale. Dual-axis trackers (tracking both azimuth and elevation) exist but are rarely cost-effective at scale. For commercial rooftops, ballasted racking sits on flat roofs without roof penetrations, weighted by concrete blocks."
+      },
+      {
+        "heading": "Wiring and electrical balance of system",
+        "body": "Electrical BOS includes all the wiring, conduit, combiner boxes, and switchgear that moves electricity from panels to the inverter and then to the grid connection. On the DC side: module-level wiring (MC4 connectors), string combiners that aggregate multiple strings of panels, and DC disconnect switches. On the AC side: AC combiner panels, step-up transformers (which raise voltage for efficient long-distance transmission at utility scale — typically from 600V to 34.5 kV), and the main interconnection switchgear at the project substation. Electrical BOS typically costs $0.08–$0.12/W at utility scale."
+      },
+      {
+        "heading": "Meters, monitoring, and SCADA",
+        "body": "All solar systems include a production meter (measuring kWh generated) and a utility-grade revenue meter at the point of interconnection. Residential and small commercial systems use app-based monitoring platforms (SolarEdge, Enphase, SMA) that display real-time and historical output. Utility-scale projects use SCADA (Supervisory Control and Data Acquisition) systems that monitor every inverter, tracker motor, and environmental sensor in real time, allowing remote diagnostics and fault detection. SCADA data feeds into the O&M provider's operations center and is often a lender requirement."
+      },
+      {
+        "heading": "Transformers and substations",
+        "body": "At utility scale, electricity leaves inverters at 600V–1,000V AC and must be stepped up to transmission or distribution voltage for delivery to the grid. Pad-mount transformers (typically 34.5 kV) are distributed across the array, connected by underground medium-voltage (MV) collector cables. A project substation steps voltage up further (to 69 kV, 115 kV, or higher) for interconnection to the transmission network. The substation often includes protection relays, circuit breakers, and reactive power compensation equipment (capacitor banks or STATCOMs) required by the interconnecting utility. Substation cost can reach $5–15 million for a large project."
+      },
+      {
+        "heading": "Weather stations and sensors",
+        "body": "Utility-scale and C&I solar plants include on-site weather stations that continuously measure irradiance (GHI, POA), ambient temperature, module temperature, and wind speed. This data is used to calculate performance ratio (actual output vs. theoretical), detect soiling or degradation, and support energy production reporting to offtakers and lenders. Independent engineers reviewing a project's energy model will scrutinize the quality and placement of these sensors. Residential systems generally rely on satellite-based irradiance data rather than on-site sensors."
+      }
+    ],
+    "whyItMatters": "The equipment that surrounds the panels often determines whether a project performs as modeled. Inverter quality, tracker reliability, monitoring capability, and substation design all affect long-run energy production and O&M costs. Understanding what each component does — and what can go wrong — enables more informed review of technical reports, equipment specifications, and cost assumptions.",
+    "terms": [
+      {
+        "term": "String inverter",
+        "definition": "An inverter that manages a series string of panels. Cost-effective but output is limited by the weakest panel in the string — shade on one panel reduces the whole string."
+      },
+      {
+        "term": "Microinverter",
+        "definition": "A small inverter attached to each individual panel, maximizing output panel-by-panel. Higher upfront cost but better performance in shaded or complex roof layouts."
+      },
+      {
+        "term": "Single-axis tracker (SAT)",
+        "definition": "A motorized mounting system that rotates panels to follow the sun east to west, increasing annual energy yield by 15–25% vs. fixed-tilt at modest additional cost."
+      },
+      {
+        "term": "SCADA",
+        "definition": "Supervisory Control and Data Acquisition — the industrial monitoring and control system used at utility-scale plants to manage and diagnose all major equipment in real time."
+      },
+      {
+        "term": "Balance of System (BOS)",
+        "definition": "All components of a solar project other than the panels themselves — inverters, racking, wiring, switchgear, transformers, and monitoring equipment."
+      },
+      {
+        "term": "Performance Ratio (PR)",
+        "definition": "A measure of how efficiently a solar system converts available solar energy into AC output, accounting for all losses. A PR of 80% is typical for well-performing utility-scale plants."
+      },
+      {
+        "term": "Collector cable / MV cable",
+        "definition": "Underground medium-voltage (typically 34.5 kV) cables at utility-scale plants that gather AC output from distributed pad-mount transformers and route it to the project substation."
+      }
+    ],
+    "comparison": {
+      "title": "Key Equipment by System Size",
+      "headers": [
+        "Equipment",
+        "Residential (5–15 kW)",
+        "Commercial / C&I (100 kW–5 MW)",
+        "Utility Scale (20 MW+)"
+      ],
+      "rows": [
+        [
+          "Inverter type",
+          "String or microinverter",
+          "String inverters or central",
+          "Central string inverters (4–5 MW units)"
+        ],
+        [
+          "Mounting",
+          "Roof-mount racking",
+          "Roof ballast or ground-mount fixed",
+          "Ground-mount single-axis tracker"
+        ],
+        [
+          "Monitoring",
+          "App-based (Enphase, SolarEdge)",
+          "Web portal + basic SCADA",
+          "Full SCADA + remote O&M center"
+        ],
+        [
+          "Transformer",
+          "None (grid connection via meter)",
+          "Pad-mount step-up (if MV required)",
+          "Distributed pad-mounts + project substation"
+        ],
+        [
+          "Switchgear",
+          "AC disconnect + utility meter",
+          "AC combiner + utility-grade meter",
+          "MV switchgear + protection relays + breakers"
+        ],
+        [
+          "Weather sensors",
+          "None (satellite data used)",
+          "Sometimes irradiance sensor",
+          "Full met station (GHI, POA, temp, wind)"
+        ],
+        [
+          "Typical BOS cost",
+          "~$0.40–0.60/W",
+          "~$0.25–0.40/W",
+          "~$0.25–0.35/W"
+        ]
+      ],
+      "highlightCol": 3
+    },
+    "quiz": [
+      {
+        "question": "What is the primary function of an inverter in a solar system?",
+        "options": [
+          "Store excess solar energy for later use",
+          "Convert DC electricity from panels into AC electricity",
+          "Step up voltage for transmission to the grid",
+          "Measure and report energy production"
+        ],
+        "answer": 1,
+        "explanation": "Inverters convert the direct current (DC) produced by solar panels into the alternating current (AC) used by buildings and the grid — they are the most critical non-panel component in any solar system."
+      },
+      {
+        "question": "Why are single-axis trackers standard at utility scale but not common in residential systems?",
+        "options": [
+          "They are too expensive to manufacture",
+          "Residential roofs cannot support the extra weight",
+          "The energy yield gain justifies the cost at large scale but not for small rooftop systems",
+          "They require a south-facing orientation not available in residential settings"
+        ],
+        "answer": 2,
+        "explanation": "Single-axis trackers improve annual yield by 15–25%, which is highly valuable across hundreds of MW. For a 10 kW residential rooftop, the incremental cost and complexity outweigh the benefit, and roof geometry makes them impractical anyway."
+      },
+      {
+        "question": "What does BOS stand for in solar project finance and engineering contexts?",
+        "options": [
+          "Battery Operating System",
+          "Balance of System",
+          "Bifacial Output Standard",
+          "Breaker and Output Switchgear"
+        ],
+        "answer": 1,
+        "explanation": "BOS — Balance of System — refers to all solar project components other than the panels: inverters, racking, wiring, switchgear, transformers, and monitoring."
+      },
+      {
+        "question": "What is the main advantage of microinverters over string inverters for residential installations?",
+        "options": [
+          "They are significantly cheaper per watt",
+          "They allow each panel to operate independently, so shading one panel does not reduce the output of others",
+          "They eliminate the need for AC wiring entirely",
+          "They can store energy without a separate battery system"
+        ],
+        "answer": 1,
+        "explanation": "With string inverters, the output of an entire string is limited by the weakest panel. Microinverters perform maximum power point tracking at the panel level, so partial shading or soiling on one panel does not drag down the rest."
+      },
+      {
+        "question": "What is the purpose of a step-up transformer at a utility-scale solar project?",
+        "options": [
+          "To convert AC power back to DC for storage",
+          "To increase voltage from inverter-level output to transmission or distribution voltage for grid delivery",
+          "To regulate frequency fluctuations caused by cloud cover",
+          "To isolate the solar array from the substation during maintenance"
+        ],
+        "answer": 1,
+        "explanation": "Inverters output at relatively low voltage (600V–1,000V AC). Step-up transformers raise this to medium voltage (34.5 kV) for collection across the array, and a project substation then steps up further to transmission voltage (69 kV+) for grid interconnection."
+      }
+    ]
+  },
+  {
+    "id": "home-systems",
+    "title": "Home Systems",
+    "summary": "Rooftop solar economics, net metering, and residential installation basics",
+    "tag": "Residential",
+    "icon": "🏠",
+    "level": "Beginner",
+    "estimatedMinutes": 7,
+    "keyTakeaways": [
+      "A typical US residential system is 6–12 kW and costs $2.50–$3.50/W before incentives",
+      "Net metering policies — which vary by state — are the primary driver of residential payback periods",
+      "Most residential installs are now paired with battery storage to capture self-consumption benefits"
+    ],
+    "sections": [
+      {
+        "heading": "System size and cost",
+        "body": "A typical US home installs 6–12 kW of solar capacity, sufficient to offset 80–100% of annual electricity consumption depending on roof size, orientation, and local irradiance. Installed costs in 2025 range from approximately $2.50 to $3.50 per watt (DC) before the federal ITC, translating to $15,000–$42,000 gross system cost. After the 30% ITC, net cost falls to roughly $10,500–$29,400."
+      },
+      {
+        "heading": "Net metering and value stacking",
+        "body": "Net metering (NEM) allows homeowners to export excess solar generation to the grid and receive credits on their utility bill. The value of these credits — and therefore the economic return of a residential system — is heavily dependent on state policy. California's NEM 3.0 (2023) significantly reduced export credits, pushing economics toward self-consumption and battery storage. Other states maintain more favorable NEM tariffs."
+      },
+      {
+        "heading": "Roof considerations",
+        "body": "South-facing roof surfaces at 30–40° tilt are optimal in the continental US. East- or west-facing surfaces produce 15–25% less energy but can improve morning or evening self-consumption profiles. Roof age, shading from trees or chimneys, and structural load capacity all affect system design and installer quotes. Most installers require at least 10 years of remaining roof life."
+      },
+      {
+        "heading": "Residential storage pairing",
+        "body": "Battery storage — typically 10–20 kWh systems based on lithium iron phosphate (LFP) chemistry — is increasingly paired with residential solar. Storage enables backup power during outages and allows households to maximize self-consumption rather than exporting cheap solar power and buying expensive evening electricity. The combined solar + storage ITC (30% federal) applies to both components."
+      }
+    ],
+    "whyItMatters": "Residential solar is the most visible segment of the market and shapes broader public and policy perceptions of solar economics. Understanding how homeowner payback periods work, how net metering policies differ by state, and how the storage pairing trend is evolving provides useful baseline context for benchmarking commercial and utility-scale economics.",
+    "terms": [
+      {
+        "term": "Net Metering (NEM)",
+        "definition": "A utility billing arrangement that credits solar system owners for excess electricity exported to the grid, reducing their net electricity bill."
+      },
+      {
+        "term": "Self-consumption",
+        "definition": "The share of a solar system's output consumed directly on-site rather than exported to the grid — increasingly important as export tariffs decline."
+      },
+      {
+        "term": "ITC (Investment Tax Credit)",
+        "definition": "The federal tax credit for solar systems, currently 30% of installed cost under the Inflation Reduction Act for systems placed in service through 2032."
+      },
+      {
+        "term": "LFP",
+        "definition": "Lithium iron phosphate — the preferred battery chemistry for residential and commercial storage due to its safety profile and cycle life."
+      }
+    ],
+    "diagramImage": {
+      "title": "Residential Solar System",
+      "url": "/charts/Resi Solar System.png"
+    },
+    "chart": {
+      "type": "bar",
+      "title": "Residential Solar Payback Period by State Policy (Years)",
+      "xKey": "state",
+      "bars": [
+        {
+          "key": "payback",
+          "label": "Est. Payback Period (years)",
+          "color": "#CC3322"
+        }
+      ],
+      "data": [
+        {
+          "state": "California (NEM 3.0)",
+          "payback": 11
+        },
+        {
+          "state": "New York (VDER)",
+          "payback": 8
+        },
+        {
+          "state": "Massachusetts",
+          "payback": 7
+        },
+        {
+          "state": "New Jersey",
+          "payback": 7
+        },
+        {
+          "state": "Texas (no NEM)",
+          "payback": 10
+        },
+        {
+          "state": "Arizona",
+          "payback": 9
+        },
+        {
+          "state": "Florida",
+          "payback": 8
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "What is the approximate cost range for a typical US residential solar system before incentives (per watt)?",
+        "options": [
+          "$0.50–$1.00/W",
+          "$1.50–$2.00/W",
+          "$2.50–$3.50/W",
+          "$5.00–$7.00/W"
+        ],
+        "answer": 2,
+        "explanation": "Typical US residential installed costs in 2025 range from approximately $2.50 to $3.50/W (DC) before the federal ITC is applied."
+      },
+      {
+        "question": "What is the primary policy mechanism that determines residential solar payback periods?",
+        "options": [
+          "Renewable Portfolio Standards",
+          "Net metering tariffs",
+          "Carbon credits",
+          "Feed-in tariffs"
+        ],
+        "answer": 1,
+        "explanation": "Net metering policies — which vary significantly by state — determine how much homeowners receive for exported solar power, and are the primary driver of payback economics."
+      },
+      {
+        "question": "What does it mean when a state moves from NEM 2.0 to NEM 3.0 (as California did in 2023)?",
+        "options": [
+          "The state eliminated all solar incentives",
+          "Export credits for excess solar sent to the grid were significantly reduced, shifting economics toward self-consumption",
+          "Solar systems were required to include battery storage by law",
+          "The interconnection process was simplified for residential customers"
+        ],
+        "answer": 1,
+        "explanation": "California's NEM 3.0 dramatically reduced the per-kWh credit homeowners receive for exporting solar power to the grid. This lengthened payback periods for solar-only systems and made battery storage far more economically attractive by enabling households to maximize self-consumption."
+      },
+      {
+        "question": "What is the typical size range of a residential solar system in the United States?",
+        "options": [
+          "1–3 kW",
+          "6–12 kW",
+          "20–50 kW",
+          "100–500 kW"
+        ],
+        "answer": 1,
+        "explanation": "A typical US residential installation is 6–12 kW (DC), sufficient to offset 80–100% of an average household's annual electricity consumption depending on location, roof orientation, and local electricity rates."
+      },
+      {
+        "question": "Why do most installers require at least 10 years of remaining roof life before installing solar?",
+        "options": [
+          "Roofs under 10 years old are not structurally strong enough to hold panels",
+          "Removing and reinstalling panels for a roof replacement is costly, so a minimum remaining life protects the system economics",
+          "Warranties on solar panels are voided if the roof is less than 10 years old",
+          "Building codes prohibit solar installation on newer roofs"
+        ],
+        "answer": 1,
+        "explanation": "If a roof needs replacement during the 25–30 year life of a solar system, the panels must be removed and reinstalled — adding ,000–,000+ in cost. Requiring adequate remaining roof life protects the customer's investment economics."
+      }
+    ]
+  },
+  {
+    "id": "ci-community-solar",
+    "title": "C&I and Community Solar",
+    "summary": "Commercial, industrial, and community solar — offtake structures, economics, and how they differ from residential and utility-scale",
+    "tag": "Commercial",
+    "icon": "🏢",
+    "level": "Intermediate",
+    "estimatedMinutes": 9,
+    "keyTakeaways": [
+      "C&I solar (100 kW–5 MW) sits between residential and utility-scale — distinct economics, offtake structures, and financing",
+      "Community solar allows subscribers without suitable rooftops to receive bill credits from a shared off-site array",
+      "Behind-the-meter C&I projects monetize electricity cost savings directly; front-of-meter projects sell power under a PPA or net metering tariff"
+    ],
+    "sections": [
+      {
+        "heading": "What is C&I solar?",
+        "body": "Commercial and industrial (C&I) solar refers to systems typically in the 100 kW to 5 MW range, installed at or near a customer's facility — on a rooftop, carport, or adjacent ground-mount. Customers include manufacturers, warehouses, big-box retailers, universities, municipalities, and data centers. C&I systems are almost always behind-the-meter (BTM), meaning their primary value is reducing the host's electricity bill rather than selling power into the wholesale market. Because commercial electricity rates (including demand charges) are higher than residential rates, C&I economics are often compelling even without premium state incentives."
+      },
+      {
+        "heading": "Behind-the-meter vs. front-of-meter",
+        "body": "Behind-the-meter (BTM) systems are connected on the customer side of the utility meter. Solar output directly offsets the facility's electricity consumption, reducing its utility bill. Front-of-meter (FTM) systems are connected at the distribution or transmission level and sell power to a utility or third party under a PPA. Most C&I rooftop solar is BTM. Larger ground-mount C&I projects — sometimes called 'sub-utility' or 'distributed utility' — may be FTM or use virtual net metering. The distinction matters for regulatory treatment, interconnection process, and how economics are modeled.",
+        "image": {
+          "url": "/charts/BTM - FOM diagram.png",
+          "alt": "Behind-the-Meter (BTM) vs. Front-of-Meter (FTM) diagram",
+          "caption": "Behind-the-Meter (BTM) vs. Front-of-Meter (FTM) — meter position determines how solar output is valued and contracted"
+        }
+      },
+      {
+        "heading": "C&I offtake and contract structures",
+        "body": "C&I projects use several contract structures: (1) Direct ownership — the corporate buys and owns the system, taking the ITC directly; (2) Third-party PPA — a developer installs and owns the system, selling electricity to the host at a fixed $/kWh rate below the retail tariff, typically for 15–25 years; (3) Solar lease — similar to PPA but the host pays a fixed monthly lease payment rather than a per-kWh rate; (4) PACE financing — Property Assessed Clean Energy liens the system against the real estate for long-term financing. Corporate PPAs require creditworthy offtakers; investment-grade or near-IG counterparties are strongly preferred by lenders and tax equity investors."
+      },
+      {
+        "heading": "Demand charges and sizing",
+        "body": "Many commercial utility tariffs include demand charges — fees based on peak kW consumption in a billing period, not just total kWh. Solar alone rarely eliminates demand charges since peak demand often occurs outside solar hours (early evening). This is a key reason battery storage is increasingly paired with C&I solar: storage can shave peak demand and unlock bill savings that solar alone cannot capture. Properly sizing a C&I system requires modeling the facility's load profile, not just its annual consumption.",
+        "diagram": "demand-charge"
+      },
+      {
+        "heading": "Community solar",
+        "body": "Community solar (also called shared solar or solar gardens) allows customers — households, small businesses, or renters — who cannot install rooftop solar to subscribe to a portion of an off-site shared array. Subscribers receive credits on their utility bill proportional to their share of the array's output, typically at a 5–15% discount to their retail electricity rate. Community solar projects are typically 1–5 MW in size, ground-mounted, and developed under state-specific programs. Currently active in roughly 20 states, with Minnesota, New York, Illinois, Maryland, and Colorado as key markets. Subscriber management — acquiring, retaining, and billing hundreds of individual customers — is a distinctive operational challenge versus standard solar.",
+        "image": {
+          "url": "/charts/Community Solar Diagram.png",
+          "alt": "How community solar works — array, utility, and subscriber bill credits",
+          "caption": "Community solar subscribers receive bill credits proportional to their share of an off-site array's output"
+        }
+      },
+      {
+        "heading": "Financing C&I and community solar",
+        "body": "C&I and community solar projects are harder to finance than utility-scale because they are smaller (limiting economies of scale), have more diverse and sometimes less creditworthy offtakers, and face more complex interconnection (distribution-level). Tax equity is the dominant financing structure for projects claiming the ITC, but transaction costs make standalone tax equity uneconomical below ~$5M ITC. Smaller projects often use tax equity aggregation platforms (e.g. Mosaic, Greenbacker) or develop portfolios to reach bankable scale. Community solar adds subscriber credit risk — lenders typically require high subscription rates (90–95%) and strong subscriber management covenants."
+      }
+    ],
+    "whyItMatters": "C&I and community solar occupy a distinct middle ground between residential and utility-scale — with different offtake structures, financing challenges, and regulatory frameworks. Consultants advising on distributed energy portfolios, utility rate cases, or developer M&A need to understand how these segments work and why their economics differ materially from larger projects.",
+    "terms": [
+      {
+        "term": "Behind-the-meter (BTM)",
+        "definition": "A solar system connected on the customer side of the utility meter, whose output directly offsets on-site electricity consumption and reduces the host's utility bill."
+      },
+      {
+        "term": "Demand charge",
+        "definition": "A utility bill component based on a customer's peak power demand (kW) in a billing period, not just total energy consumed — often 30–50% of a commercial electricity bill."
+      },
+      {
+        "term": "Third-party PPA",
+        "definition": "A contract where a developer owns and operates a solar system on a customer's property, selling electricity to the host at a fixed rate below the retail tariff for 15–25 years."
+      },
+      {
+        "term": "Community solar",
+        "definition": "A shared, off-site solar array that multiple subscribers can buy into, receiving credits on their utility bills proportional to their share of output — accessible to renters and those without suitable rooftops."
+      },
+      {
+        "term": "PACE financing",
+        "definition": "Property Assessed Clean Energy — a financing mechanism that attaches repayment of a solar or efficiency project to the property tax bill, senior to most other liens."
+      },
+      {
+        "term": "Virtual net metering (VNM)",
+        "definition": "A billing arrangement that allows credits from an off-site solar array to be applied to one or more subscriber utility accounts, the mechanism underlying most community solar programs."
+      },
+      {
+        "term": "Tax equity aggregation",
+        "definition": "Pooling multiple smaller solar projects into a single fund structure to achieve the scale needed to attract institutional tax equity investors, reducing per-project transaction costs."
+      }
+    ],
+    "comparison": {
+      "title": "Residential vs. C&I vs. Community Solar",
+      "headers": [
+        "Dimension",
+        "Residential",
+        "C&I",
+        "Community Solar"
+      ],
+      "rows": [
+        [
+          "Typical system size",
+          "5–15 kW",
+          "100 kW–5 MW",
+          "1–5 MW"
+        ],
+        [
+          "Location",
+          "Customer rooftop",
+          "Customer rooftop or ground-mount",
+          "Off-site, shared array"
+        ],
+        [
+          "Primary value driver",
+          "Retail bill offset + NEM credit",
+          "Bill savings incl. demand charge reduction",
+          "Subscriber bill credit (5–15% discount)"
+        ],
+        [
+          "Offtake structure",
+          "Net metering / self-consumption",
+          "Direct ownership, PPA, or lease",
+          "Subscription contract"
+        ],
+        [
+          "Who takes the ITC",
+          "Homeowner (direct) or developer (PPA)",
+          "Host or developer (PPA/lease)",
+          "Developer"
+        ],
+        [
+          "Key financing challenge",
+          "Customer credit / FICO",
+          "Offtaker creditworthiness",
+          "Subscriber acquisition & churn"
+        ],
+        [
+          "Interconnection level",
+          "120/240V residential service",
+          "Distribution (4–35 kV)",
+          "Distribution (4–35 kV)"
+        ]
+      ],
+      "highlightCol": 2
+    },
+    "quiz": [
+      {
+        "question": "What is the primary economic value driver for a behind-the-meter C&I solar system?",
+        "options": [
+          "Wholesale electricity market revenues",
+          "Reducing the facility's retail electricity bill, including demand charges",
+          "Renewable Energy Certificate (REC) sales",
+          "Federal production tax credits (PTCs)"
+        ],
+        "answer": 1,
+        "explanation": "BTM C&I solar directly offsets the host's electricity consumption, reducing its retail electricity bill. Because commercial tariffs include demand charges and are typically higher than residential rates, bill savings can be substantial."
+      },
+      {
+        "question": "Who benefits from community solar and why?",
+        "options": [
+          "Only large corporations with idle land",
+          "Renters, apartment dwellers, and others who cannot install rooftop solar",
+          "Utility companies seeking to reduce grid maintenance costs",
+          "Only rural customers far from the grid"
+        ],
+        "answer": 1,
+        "explanation": "Community solar is specifically designed for customers who cannot host their own solar system — renters, those with shaded or unsuitable rooftops, or those in multi-tenant buildings — by allowing them to subscribe to a share of an off-site array."
+      },
+      {
+        "question": "Why is battery storage particularly valuable when paired with C&I solar?",
+        "options": [
+          "It allows the system to qualify for a higher ITC rate",
+          "It enables the project to connect at transmission voltage",
+          "It can shave peak demand charges that solar alone cannot eliminate",
+          "It reduces the need for net metering agreements"
+        ],
+        "answer": 2,
+        "explanation": "Commercial electricity bills include demand charges based on peak kW usage, which often occur outside solar hours. Battery storage can discharge during peak demand windows, reducing those charges in a way that solar generation alone cannot."
+      },
+      {
+        "question": "What is PACE financing and what makes it distinctive from conventional solar loans?",
+        "options": [
+          "A federal grant program for commercial solar projects over 1 MW",
+          "A financing structure where repayment is attached to the property tax bill, making it senior to most other liens",
+          "A lease structure where the solar developer retains ownership of the panels",
+          "A state-level rebate program for community solar subscribers"
+        ],
+        "answer": 1,
+        "explanation": "PACE (Property Assessed Clean Energy) finances solar and efficiency upgrades through the property tax system — repayment is collected via the tax bill and the obligation runs with the property. This seniority over mortgages has made PACE controversial with lenders but attractive to property owners who want off-balance-sheet financing."
+      },
+      {
+        "question": "Why is subscriber management a unique operational challenge for community solar projects?",
+        "options": [
+          "Subscribers must be physically present at the array to receive their energy credits",
+          "Projects must acquire, retain, and bill hundreds of individual customers rather than a single offtaker, creating ongoing churn and credit risk",
+          "Community solar projects are prohibited from using automated billing systems",
+          "Subscribers take physical ownership of panels, requiring complex title management"
+        ],
+        "answer": 1,
+        "explanation": "Unlike a utility PPA with a single creditworthy counterparty, community solar projects depend on a portfolio of individual subscribers. Managing acquisition, attrition, credit quality, and billing across hundreds of accounts is operationally complex and a key lender diligence focus."
+      }
+    ]
+  },
+  {
+    "id": "utility-scale",
+    "title": "Utility Scale",
+    "summary": "Ground-mount project development, interconnection, offtake, and key cost drivers",
+    "tag": "Commercial",
+    "icon": "🏭",
+    "level": "Intermediate",
+    "estimatedMinutes": 10,
+    "keyTakeaways": [
+      "Utility-scale solar now costs $0.80–$1.10/W (DC) at the EPC level, making it the cheapest source of new generation in most US markets",
+      "Interconnection queue backlogs remain the single largest development constraint nationwide",
+      "PPAs and merchant revenue stacks are the two primary offtake structures"
+    ],
+    "sections": [
+      {
+        "heading": "Project scale and layout",
+        "body": "Utility-scale solar projects typically range from 20 MW to 500+ MW (DC) on single sites, though some large projects exceed 1 GW. Most use ground-mounted single-axis trackers (SATs) with bifacial TOPCon modules. DC-to-AC ratios of 1.25–1.35 are common, allowing inverters to be sized smaller than the array for cost optimization. Projects are co-located with battery storage at increasing frequency."
+      },
+      {
+        "heading": "Development process",
+        "body": "A typical utility-scale project takes 4–7 years from site control to commercial operation. Key milestones include site control and land lease, environmental and permitting studies (NEPA, state), interconnection application and studies, offtake contracting (PPA or merchant), financing (tax equity + construction loan + term debt), and EPC contract execution. Interconnection study delays have extended timelines materially since 2021."
+      },
+      {
+        "heading": "Interconnection queue",
+        "body": "FERC Order 2023 cluster study reforms are being implemented across ISOs and RTOs. As of end-2024 (LBNL Queued Up 2025 Edition), approximately 1,400 GW of generation and 890 GW of storage remain in active queues — down 12% year-over-year as record withdrawals (700+ GW in 2024 alone) outpaced new submissions. However, completion rates remain sobering: only 13% of capacity that applied from 2000–2019 had reached commercial operation by end-2024, with 77% having withdrawn. Median queue time has doubled to over 4 years. Queue position, study costs, and network upgrade obligations remain critical diligence items."
+      },
+      {
+        "heading": "Offtake structures",
+        "body": "Power purchase agreements (PPAs) provide contracted price certainty for 10–25 years, preferred by utilities, corporates (C&I offtake), and lenders. Merchant projects sell into spot or day-ahead wholesale markets, accepting price volatility in exchange for potentially higher revenues. Hybrid structures (partial PPA + merchant tail) are increasingly common. PPA prices in 2025 range from $25–$50/MWh depending on market and tenor."
+      },
+      {
+        "heading": "Cost structure",
+        "body": "Utility-scale EPC costs in the US have compressed to approximately $0.80–$1.10/W (DC) for a solar-only project. Module costs account for roughly 35–40% of EPC. Additional soft costs (interconnection, permitting, financing fees, development overhead) add $0.10–$0.25/W. Total all-in installed costs are typically $1.00–$1.40/W, depending on market, equipment, and complexity."
+      }
+    ],
+    "whyItMatters": "Utility-scale solar is the dominant segment by installed capacity and the focus of most institutional capital in the energy transition. Understanding the full development lifecycle — from site control and interconnection through offtake contracting and EPC execution — is essential for any advisor evaluating a project's feasibility, risk profile, or value.",
+    "terms": [
+      {
+        "term": "Single-axis tracker (SAT)",
+        "definition": "A mounting system that rotates panels to follow the sun's east-west arc, increasing energy yield by 15–25% versus fixed-tilt at modest additional cost."
+      },
+      {
+        "term": "DC/AC ratio",
+        "definition": "The ratio of solar array capacity (DC watts) to inverter capacity (AC watts); typically 1.25–1.35 for utility-scale projects to optimize costs."
+      },
+      {
+        "term": "PPA (Power Purchase Agreement)",
+        "definition": "A long-term contract between a generator and a buyer (utility, corporate, or aggregator) to purchase electricity at a fixed or indexed price."
+      },
+      {
+        "term": "EPC (Engineering, Procurement, Construction)",
+        "definition": "The turnkey contractor that designs, procures equipment for, and constructs a solar project under a fixed-price or lump-sum contract."
+      },
+      {
+        "term": "FERC Order 2023",
+        "definition": "A 2023 Federal Energy Regulatory Commission order reforming the interconnection queue process to a cluster-based study model aimed at reducing backlogs."
+      }
+    ],
+    "diagramImage": {
+      "title": "Utility-Scale Solar: System Architecture",
+      "url": "/charts/Utility Scale - Solar System.png"
+    },
+    "chart": {
+      "type": "waterfall",
+      "title": "Utility-Scale Solar: All-In Installed Cost Breakdown ($/W DC, 2025)",
+      "data": [
+        {
+          "name": "Modules",
+          "value": 0.4,
+          "cumulative": 0.4
+        },
+        {
+          "name": "Racking & Trackers",
+          "value": 0.12,
+          "cumulative": 0.52
+        },
+        {
+          "name": "Inverters",
+          "value": 0.07,
+          "cumulative": 0.59
+        },
+        {
+          "name": "Electrical BOS",
+          "value": 0.1,
+          "cumulative": 0.69
+        },
+        {
+          "name": "Civil & Structural",
+          "value": 0.14,
+          "cumulative": 0.83
+        },
+        {
+          "name": "EPC Margin",
+          "value": 0.08,
+          "cumulative": 0.91
+        },
+        {
+          "name": "Interconnection",
+          "value": 0.1,
+          "cumulative": 1.01
+        },
+        {
+          "name": "Dev + Financing",
+          "value": 0.14,
+          "cumulative": 1.15
+        }
+      ]
+    },
+    "timeline": {
+      "title": "Utility-Scale Solar: Development Timeline",
+      "phases": [
+        {
+          "label": "Site Control & Lease",
+          "start": 0,
+          "duration": 3,
+          "color": "#1B2A4A"
+        },
+        {
+          "label": "Environmental & Permitting",
+          "start": 3,
+          "duration": 8,
+          "color": "#2d4a7a"
+        },
+        {
+          "label": "Interconnection Studies",
+          "start": 6,
+          "duration": 18,
+          "color": "#CC3322"
+        },
+        {
+          "label": "Offtake (PPA) Contracting",
+          "start": 12,
+          "duration": 10,
+          "color": "#e05a4a"
+        },
+        {
+          "label": "Project Financing",
+          "start": 22,
+          "duration": 6,
+          "color": "#1B2A4A"
+        },
+        {
+          "label": "EPC Construction",
+          "start": 28,
+          "duration": 12,
+          "color": "#16a34a"
+        }
+      ],
+      "totalMonths": 42,
+      "note": "Timeline in months from project initiation. Interconnection queue delays are the primary variable — actual timelines vary widely by ISO/RTO."
+    },
+    "quiz": [
+      {
+        "question": "What is the approximate EPC cost range for US utility-scale solar in 2025?",
+        "options": [
+          "$0.20–$0.40/W",
+          "$0.80–$1.10/W",
+          "$2.00–$2.50/W",
+          "$3.50–$4.00/W"
+        ],
+        "answer": 1,
+        "explanation": "US utility-scale solar EPC costs have fallen to approximately $0.80–$1.10/W (DC) as of 2025, driven by module cost reductions and supply chain maturation."
+      },
+      {
+        "question": "What is the single largest development constraint for new utility-scale solar projects in the US?",
+        "options": [
+          "Lack of available land",
+          "Interconnection queue backlogs",
+          "Module supply shortages",
+          "Absence of offtake buyers"
+        ],
+        "answer": 1,
+        "explanation": "Interconnection queue backlogs remain the dominant constraint — ~1,400 GW of generation capacity sits in active queues as of end-2024, with median wait times now exceeding 4 years (LBNL Queued Up 2025 Edition)."
+      },
+      {
+        "question": "What is a DC/AC ratio of 1.30 and why is it used?",
+        "options": [
+          "The ratio of solar panels to battery cells — higher ratios improve storage efficiency",
+          "The ratio of installed DC panel capacity to AC inverter capacity, used to optimize cost by slightly undersizing inverters relative to the array",
+          "A measure of how much power is lost between the panel and the meter",
+          "The proportion of generation exported to the grid versus consumed on-site"
+        ],
+        "answer": 1,
+        "explanation": "A DC/AC ratio above 1.0 means the solar array is oversized relative to the inverter. This is economical because panels rarely produce their nameplate output simultaneously — clipping a small amount of peak production is worth the inverter cost savings. Ratios of 1.25–1.35 are standard at utility scale."
+      },
+      {
+        "question": "What is the difference between a PPA and a merchant revenue structure for a utility-scale project?",
+        "options": [
+          "PPAs are used for solar projects; merchant structures are only used for wind",
+          "A PPA provides contracted price certainty with a fixed buyer; a merchant project sells into wholesale spot markets and accepts price volatility",
+          "Merchant structures require more equity and no debt, while PPAs are fully debt-financed",
+          "PPAs are only available to regulated utilities, not independent power producers"
+        ],
+        "answer": 1,
+        "explanation": "A PPA locks in a fixed or indexed price with a creditworthy buyer for 10–25 years, enabling project financing. A merchant project sells into wholesale markets at prevailing prices — potentially higher returns but significantly more revenue risk, which makes debt financing more difficult and expensive."
+      },
+      {
+        "question": "What is FERC Order 2023 and why does it matter for solar development timelines?",
+        "options": [
+          "A rule requiring all solar projects above 100 MW to undergo federal environmental review",
+          "A 2023 order reforming interconnection queue processes to a cluster study model, aimed at reducing multi-year backlogs that have delayed solar project timelines nationwide",
+          "A federal mandate requiring solar projects to pair with battery storage",
+          "An order setting minimum PPA pricing for federally regulated utilities"
+        ],
+        "answer": 1,
+        "explanation": "FERC Order 2023 reformed the interconnection study process from a serial first-come-first-served model to cluster-based studies. While intended to reduce queue backlogs — which stretched median wait times to over 4 years — implementation has been uneven across ISOs and RTOs."
+      }
+    ]
+  },
+  {
+    "id": "the-industry",
+    "title": "The Industry",
+    "summary": "Market structure, supply chain, major players, and competitive dynamics",
+    "tag": "Business",
+    "icon": "🌐",
+    "level": "Intermediate",
+    "estimatedMinutes": 10,
+    "keyTakeaways": [
+      "China controls ~92% of global polysilicon and ~85% of module production — dominance that expanded further in 2024–2025",
+      "The US installed 43.2 GW in 2025 — solar's fifth straight year as the top source of new US electricity capacity",
+      "IPPs, utilities, and tax equity investors are the primary capital pools in US solar project finance"
+    ],
+    "sections": [
+      {
+        "heading": "Global manufacturing supply chain",
+        "body": "The solar supply chain runs from polysilicon (raw material) through ingots, wafers, cells, and modules. China controls approximately 92% of global polysilicon production and 85% of module manufacturing capacity, with dominance that expanded further through 2024–2025 (IEA PVPS 2025). Key Chinese manufacturers include LONGi, JA Solar, Trina Solar, and Canadian Solar (Canadian-named, Chinese-manufactured). First Solar remains the only large-scale US manufacturer, using CdTe thin-film. Notably, the US now has complete domestic solar supply chain capability from polysilicon through modules — but actual production still falls well short of domestic demand.",
+        "diagram": "supply-chain"
+      },
+      {
+        "heading": "US market structure",
+        "body": "The US solar market installed 43.2 GW (DC) in 2025, down 14% from 2024's peak of roughly 50 GW — primarily due to IRA tax credit safe-harbor dynamics delaying some utility-scale projects to 2026. Solar accounted for 54% of all new US electricity capacity in 2025; solar and storage combined hit 79%. The utility-scale segment accounted for ~80% of 2025 installations (34.7 GW). Major project developers include NextEra Energy Resources, Lightsource bp, Invenergy, AES, Ørsted, Enel Green Power, and dozens of mid-market independent power producers (IPPs).",
+        "diagram": "us-installations-pie"
+      },
+      {
+        "heading": "Trade policy and tariffs",
+        "body": "US solar imports have been subject to trade actions since 2012, including Section 201 safeguard tariffs, Section 301 tariffs on Chinese goods, and anti-dumping / countervailing duty (AD/CVD) investigations that have periodically extended to Southeast Asian countries. The AD/CVD circumvention investigation of 2022 created significant supply uncertainty before a two-year tariff moratorium was imposed. Understanding the current tariff landscape is material to any project cost or supply chain diligence."
+      },
+      {
+        "heading": "Tax equity and project finance",
+        "body": "The US project finance market for solar relies heavily on tax equity — investors (primarily large banks and insurance companies) who monetize the ITC and accelerated depreciation (MACRS) in exchange for cash returns. A typical utility-scale project is structured as a tax equity partnership flip, with the tax equity investor contributing 35–40% of capital and flipping its ownership interest to the developer/sponsor after reaching a target IRR. Back-leveraged debt is layered on top."
+      },
+      {
+        "heading": "IRA domestic content incentives",
+        "body": "The Inflation Reduction Act introduced domestic content bonuses — an additional 10% ITC adder — for projects meeting US content thresholds for steel, iron, and manufactured components. For solar, manufactured component requirements include modules, inverters, and racking. The domestic content rules are layered on top of prevailing wage and apprenticeship requirements, which themselves unlock the full 30% base ITC."
+      },
+      {
+        "heading": "Solar's role in the broader US electricity market",
+        "image": {
+          "url": "/charts/EIA Solar Generation Outlook.png",
+          "alt": "U.S. annual electric power sector generation by source, 2021–2027 (EIA STEO January 2026)",
+          "caption": "Source: U.S. Energy Information Administration, Short-Term Energy Outlook, January 2026"
+        },
+        "body": "Solar is now the fastest-growing source of electricity generation in the United States. US electricity generation totaled approximately 4,260 billion kilowatthours (BkWh) in 2025, and the EIA's Short-Term Energy Outlook (January 2026) projects growth of 1.1% in 2026 and 2.6% in 2027. Utility-scale solar is forecast to grow from 290 BkWh in 2025 to 424 BkWh by 2027 — nearly 50% growth — driven by almost 70 GW of new capacity scheduled to come online over those two years. Solar's share of total US generation is expected to rise materially through 2027, while the three legacy dispatchable sources (natural gas, coal, and nuclear) collectively fall from 75% to ~72%. Texas (ERCOT) is the single largest growth market — solar generation there is expected to nearly double from 56 BkWh in 2025 to 106 BkWh by 2027, supported by a parallel expansion of battery storage from ~15 GW to 37 GW. Natural gas remains the largest single source at ~40% of generation but is losing share; coal continues its structural decline, falling to 15% by 2027."
+      }
+    ],
+    "whyItMatters": "Fluency in solar industry structure — who develops, manufactures, finances, and operates projects — is the baseline for any credible advisory work in the sector. Understanding how supply chain concentration, trade policy, and capital market dynamics interact helps advisors frame risk, benchmark assumptions, and identify what questions to ask when evaluating a solar business or asset.",
+    "terms": [
+      {
+        "term": "IPP (Independent Power Producer)",
+        "definition": "A non-utility company that develops, owns, and operates power generation assets, selling output under PPAs or into wholesale markets."
+      },
+      {
+        "term": "Tax equity",
+        "definition": "Project finance capital provided by investors who monetize federal tax credits (ITC) and depreciation deductions in exchange for cash returns."
+      },
+      {
+        "term": "MACRS",
+        "definition": "Modified Accelerated Cost Recovery System — the IRS depreciation schedule that allows solar projects to depreciate 85% of asset basis over 5 years."
+      },
+      {
+        "term": "AD/CVD",
+        "definition": "Anti-dumping and countervailing duty tariffs imposed on imported solar products found to be sold below fair market value or benefiting from foreign government subsidies."
+      },
+      {
+        "term": "Partnership flip",
+        "definition": "The dominant tax equity structure for US renewable projects, where a tax equity investor holds a majority interest until reaching a target return, then flips to a small residual interest."
+      }
+    ],
+    "chart": {
+      "type": "pie",
+      "title": "US Solar Installations by Segment (2025, 43.2 GW total — SEIA/Wood Mackenzie)",
+      "data": [
+        {
+          "name": "Utility-Scale",
+          "value": 34.7,
+          "color": "#1B2A4A"
+        },
+        {
+          "name": "Commercial & Industrial",
+          "value": 2.3,
+          "color": "#CC3322"
+        },
+        {
+          "name": "Residential",
+          "value": 4.6,
+          "color": "#6b7280"
+        },
+        {
+          "name": "Community Solar",
+          "value": 1.6,
+          "color": "#9ca3af"
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "Approximately what share of global solar manufacturing capacity does China hold?",
+        "options": [
+          "30–40%",
+          "50–60%",
+          "80–90%",
+          "Over 95%"
+        ],
+        "answer": 2,
+        "explanation": "China holds approximately 80–90% of global manufacturing capacity across polysilicon, wafers, cells, and modules as of 2025."
+      },
+      {
+        "question": "What is a 'partnership flip' structure in solar project finance?",
+        "options": [
+          "A contract where the EPC contractor takes equity ownership",
+          "A structure where tax equity investors hold a large share until hitting a target return, then flip to a residual interest",
+          "A PPA that automatically adjusts price after year 10",
+          "A debt structure that converts to equity at project completion"
+        ],
+        "answer": 1,
+        "explanation": "In a partnership flip, the tax equity investor holds a majority interest (typically 99%) to capture tax benefits, then flips to a small residual (typically 5%) after reaching its target IRR."
+      },
+      {
+        "question": "Why does China's dominance of solar manufacturing create risk for US project developers?",
+        "options": [
+          "Chinese modules are technically inferior to US-made alternatives",
+          "Supply chain concentration creates exposure to tariff actions, geopolitical disruption, and AD/CVD investigations that can cause sudden cost increases or supply shortages",
+          "Chinese manufacturers do not offer product warranties recognized under US law",
+          "US building codes prohibit the use of Chinese-made solar modules"
+        ],
+        "answer": 1,
+        "explanation": "With China controlling ~85–92% of global module supply, US developers are exposed to trade policy risk — AD/CVD investigations, Section 201/301 tariffs, and circumvention findings have repeatedly disrupted supply and pricing. Domestic content requirements under the IRA add further complexity."
+      },
+      {
+        "question": "What role does a tax equity investor play in US solar project finance?",
+        "options": [
+          "They provide construction loans secured by the project's real estate",
+          "They invest capital in exchange for the right to monetize the project's federal tax credits and accelerated depreciation",
+          "They purchase the completed project from the developer at a fixed price",
+          "They insure the project against energy production shortfalls"
+        ],
+        "answer": 1,
+        "explanation": "Solar projects generate large federal tax benefits (ITC + MACRS depreciation) in early years that operating developers often cannot use. Tax equity investors — typically large banks and insurers — provide capital in exchange for these tax benefits, which they can offset against their own tax liabilities."
+      },
+      {
+        "question": "Which segment accounted for the largest share of US solar installations in 2025?",
+        "options": [
+          "Residential rooftop",
+          "Commercial and industrial",
+          "Utility-scale ground-mount",
+          "Community solar"
+        ],
+        "answer": 2,
+        "explanation": "Utility-scale solar accounted for approximately 80% (34.7 GW) of the 43.2 GW installed in the US in 2025, reflecting the continued dominance of large ground-mount projects in total capacity additions."
+      }
+    ]
+  },
+  {
+    "id": "financing-incentives",
+    "title": "Financing & Incentives",
+    "summary": "ITC, PTC, IRA adders, tax equity structures, and debt capital markets for solar",
+    "tag": "Economics",
+    "icon": "💰",
+    "level": "Intermediate",
+    "estimatedMinutes": 8,
+    "keyTakeaways": [
+      "The IRA extended the 30% ITC through 2032 and added new bonus adders that can push effective credits to 50%+",
+      "Tax equity remains the primary vehicle for monetizing federal credits in US solar",
+      "Direct pay provisions in the IRA enable tax-exempt entities to receive credits as cash refunds for the first time"
+    ],
+    "sections": [
+      {
+        "heading": "Investment Tax Credit (ITC)",
+        "body": "The federal Investment Tax Credit (ITC) is essentially the government writing a check — not literally, but in the form of a dollar-for-dollar reduction in what a company owes in federal taxes. If a solar project costs $100 million to build and qualifies for a 30% ITC, the project owner can reduce its federal tax bill by $30 million in the year the project starts operating. This is not a deduction (which only reduces taxable income) — it is a direct offset against the actual tax owed, making it far more valuable. The IRA extended this 30% rate through 2032. To access the full 30%, projects must pay workers prevailing wages and use qualified apprentices during construction — otherwise the credit falls to just 6%. The ITC is taken in the single year the project is placed in service."
+      },
+      {
+        "heading": "Accelerated depreciation (MACRS)",
+        "body": "Depreciation is an accounting concept: when a business buys an asset — like a solar plant — it cannot deduct the full cost in year one. Instead, tax rules require it to spread that deduction over the asset's \"useful life.\" Normally, solar equipment would be depreciated over 20–25 years. But the US tax code allows solar projects to use an accelerated schedule called MACRS (Modified Accelerated Cost Recovery System), which lets owners deduct roughly 85% of the asset's value over just 5 years instead. Why does this matter? Deductions reduce taxable income, which reduces the tax bill. A $100 million solar project using MACRS might generate $85 million of deductions in the first 5 years, saving the owner roughly $18–25 million in taxes (depending on their tax rate). Spread over 5 years, that is $3–5 million per year in tax savings purely from depreciation — on top of the one-time ITC. Like the ITC, these depreciation benefits are most valuable to investors who already have large tax bills to offset — which is again why tax equity investors are so important. A developer with a small tax bill cannot use $85 million of deductions effectively; a large bank can."
+      },
+      {
+        "heading": "IRA bonus adders",
+        "body": "On top of the base 30% ITC, the Inflation Reduction Act created additional \"adders\" — extra credit percentages that stack on top if a project meets certain criteria. Think of them as bonus points layered on top of a base score. A 10% domestic content adder applies if the project's steel, iron, and major manufactured components (modules, inverters, racking) are made in the US. A 10% energy community adder applies to projects built in communities that have historically depended on fossil fuels — areas near closed coal plants or mines, for example. A 10–20% low-income community adder applies to projects serving qualifying low-income or Tribal land areas. A project that qualifies for all adders could reach an effective credit rate above 50% — meaning the government effectively funds more than half the project cost through tax savings."
+      },
+      {
+        "heading": "Production Tax Credit (PTC)",
+        "body": "Rather than a one-time upfront credit, the Production Tax Credit (PTC) pays the project owner a fixed amount for every kilowatt-hour of electricity the project actually generates over its first 10 years — approximately $0.028/kWh in 2025, adjusted for inflation. Think of it as a per-unit revenue subsidy paid by the government rather than an energy buyer. For a project that generates a lot of electricity (high capacity factor), the PTC can be worth more in total than the ITC — but you have to wait 10 years to collect it all rather than getting it upfront. Project developers and their financial advisors model both options carefully; projects with lower capital costs and high output tend to favour the PTC, while capital-intensive projects with moderate output tend to favour taking the larger upfront ITC."
+      },
+      {
+        "heading": "Tax equity structures",
+        "body": "Here is the challenge: a solar project generates enormous tax benefits — the ITC and depreciation — in the first few years, but most solar developers do not have large enough tax bills to use them. A developer who builds $500 million of solar projects in a year might generate $150 million in tax credits, but only owe $20 million in taxes — leaving $130 million of benefits sitting unused. This is where tax equity investors come in. These are typically large banks and insurance companies with very large, predictable tax liabilities. They invest cash into the solar project in exchange for the right to claim those tax benefits against their own tax bills. The most common structure is the partnership flip: the tax equity investor owns 99% of the project — and thus 99% of the tax benefits — during the early years. Once they have earned a target return (typically around 7–9%), they \"flip\" their ownership down to around 5%, and the developer takes back majority control. It is a temporary ownership arrangement designed purely around tax efficiency. A newer, simpler alternative introduced by the IRA is transferability — the developer simply sells the tax credit to any third-party buyer for cash (typically $0.90–0.95 per $1.00 of credit), without needing a complex partnership structure at all."
+      },
+      {
+        "heading": "How incentive value is distributed",
+        "diagram": "incentive-value",
+        "body": "The chart above illustrates why tax equity investors are so central to US solar finance. For a hypothetical 100 MW project with all available incentive adders, the tax equity investor captures roughly $80 million of value — almost entirely through the ITC and depreciation benefits — while the developer earns around $28 million through their equity stake and development fee, and the lender earns approximately $18 million in interest over the loan term. The tax equity investor captures so much because the tax benefits are legally allocated 99% to them under the partnership flip structure. Without an investor willing to absorb these upfront tax benefits, the developer would be unable to monetize them — significantly increasing the real cost of the project. The IRA's transferability provision is beginning to change this by allowing simpler credit sales, but partnership flips remain the dominant structure for large utility-scale projects."
+      },
+      {
+        "heading": "Debt capital markets",
+        "body": "Utility-scale solar projects are financed with construction loans (typically floating rate, 12–24 month term), followed by long-term project finance debt (10–20 year term, fixed or hedged rate) or back-leverage at the holdco level. Term debt for contracted solar projects typically prices at 150–250 bps over SOFR (or equivalent), depending on credit quality, offtake counterparty, and market conditions. Institutional investors (insurance companies, pension funds) are active buyers of solar project bonds."
+      }
+    ],
+    "whyItMatters": "Tax credits and project finance structures are central to the economics of virtually every utility-scale solar project. Understanding how the ITC, bonus adders, tax equity, and debt interact — and how IRA provisions changed the landscape — is essential for interpreting financial models, advising on deal structure, or assessing the viability of a project or portfolio.",
+    "terms": [
+      {
+        "term": "ITC (Investment Tax Credit)",
+        "definition": "A federal tax credit equal to 30% of the eligible cost of a solar project, taken in the placed-in-service year; extended through 2032 by the IRA."
+      },
+      {
+        "term": "PTC (Production Tax Credit)",
+        "definition": "An alternative federal credit for solar (available post-2024) paying ~$0.028/kWh of generation for 10 years; often preferred for high-capacity-factor projects."
+      },
+      {
+        "term": "Prevailing wage & apprenticeship (PWA)",
+        "definition": "Labor standards required to access the full 30% ITC (versus 6% base); projects must pay Davis-Bacon wages and use qualified apprentices for construction work."
+      },
+      {
+        "term": "Transferability",
+        "definition": "An IRA provision allowing solar tax credits to be sold to unrelated third-party buyers, enabling credit monetization without a traditional tax equity partnership."
+      },
+      {
+        "term": "Back-leverage",
+        "definition": "Debt placed at the sponsor (holdco) level, secured by the equity interest in a project, used to supplement or replace project-level debt."
+      }
+    ],
+    "chart": {
+      "type": "stacked-bar",
+      "title": "ITC Rate Stack: How Adders Build on the Base Credit",
+      "xKey": "scenario",
+      "bars": [
+        {
+          "key": "base",
+          "label": "Base ITC (PWA met)",
+          "color": "#1B2A4A"
+        },
+        {
+          "key": "domestic",
+          "label": "Domestic Content Adder",
+          "color": "#2d4a7a"
+        },
+        {
+          "key": "energyCommunity",
+          "label": "Energy Community Adder",
+          "color": "#CC3322"
+        },
+        {
+          "key": "lowIncome",
+          "label": "Low-Income Community Adder",
+          "color": "#e05a4a"
+        }
+      ],
+      "data": [
+        {
+          "scenario": "Base Only",
+          "base": 30,
+          "domestic": 0,
+          "energyCommunity": 0,
+          "lowIncome": 0
+        },
+        {
+          "scenario": "+ Domestic Content",
+          "base": 30,
+          "domestic": 10,
+          "energyCommunity": 0,
+          "lowIncome": 0
+        },
+        {
+          "scenario": "+ Energy Community",
+          "base": 30,
+          "domestic": 0,
+          "energyCommunity": 10,
+          "lowIncome": 0
+        },
+        {
+          "scenario": "All Adders",
+          "base": 30,
+          "domestic": 10,
+          "energyCommunity": 10,
+          "lowIncome": 10
+        }
+      ]
+    },
+    "timeline": {
+      "title": "Project Finance Timeline: From Financing Decision to COD",
+      "phases": [
+        {
+          "label": "Term Sheet & NDA",
+          "start": 0,
+          "duration": 2,
+          "color": "#1B2A4A"
+        },
+        {
+          "label": "Tax Equity Diligence",
+          "start": 2,
+          "duration": 6,
+          "color": "#2d4a7a"
+        },
+        {
+          "label": "Debt Underwriting",
+          "start": 2,
+          "duration": 6,
+          "color": "#CC3322"
+        },
+        {
+          "label": "Financial Close",
+          "start": 8,
+          "duration": 2,
+          "color": "#16a34a"
+        },
+        {
+          "label": "Construction Draw Period",
+          "start": 10,
+          "duration": 12,
+          "color": "#e05a4a"
+        },
+        {
+          "label": "Commercial Operation (COD)",
+          "start": 22,
+          "duration": 2,
+          "color": "#16a34a"
+        }
+      ],
+      "totalMonths": 24,
+      "note": "Timeline in months from financing decision to COD. Tax equity closing and construction loan draw period run in parallel."
+    },
+    "quiz": [
+      {
+        "question": "What is the base ITC rate for solar projects under the Inflation Reduction Act (after satisfying prevailing wage requirements)?",
+        "options": [
+          "6%",
+          "20%",
+          "30%",
+          "40%"
+        ],
+        "answer": 2,
+        "explanation": "The base ITC rate is 30% for projects meeting prevailing wage and apprenticeship requirements. Projects not meeting PWA requirements receive only 6%."
+      },
+      {
+        "question": "What is the primary advantage of the IRA's transferability provision?",
+        "options": [
+          "It allows projects to be sold tax-free",
+          "It allows tax credits to be sold to third parties without a traditional tax equity partnership",
+          "It transfers ITC from one project to another",
+          "It allows credits to be carried back 5 years"
+        ],
+        "answer": 1,
+        "explanation": "Transferability allows project developers to sell tax credits directly to corporate buyers without the complexity and cost of a traditional tax equity partnership structure."
+      },
+      {
+        "question": "What is the difference between the ITC and the PTC for solar projects?",
+        "options": [
+          "The ITC applies to utility-scale only; the PTC applies to residential only",
+          "The ITC is a one-time credit based on capital cost taken at placed-in-service; the PTC pays per kilowatt-hour of generation over 10 years",
+          "The ITC requires battery storage to be co-located; the PTC does not",
+          "The PTC was eliminated by the Inflation Reduction Act and replaced by the ITC"
+        ],
+        "answer": 1,
+        "explanation": "The ITC (Investment Tax Credit) is taken upfront as a percentage of eligible project cost. The PTC (Production Tax Credit), available to solar projects placed in service after January 1, 2025, pays ~.028/kWh over 10 years of production. The ITC is generally better for capital-intensive projects; the PTC favors high-capacity-factor projects."
+      },
+      {
+        "question": "What is accelerated depreciation (MACRS) and why does it matter for solar project economics?",
+        "options": [
+          "A rule that reduces the ITC by the depreciation claimed in year one",
+          "A tax schedule allowing solar projects to depreciate 85% of their asset basis over 5 years, creating large early-year tax deductions that enhance investor returns",
+          "A method for calculating panel degradation used in energy models",
+          "A state-level incentive program that supplements the federal ITC"
+        ],
+        "answer": 1,
+        "explanation": "MACRS (Modified Accelerated Cost Recovery System) allows solar projects to front-load depreciation deductions over 5 years rather than straight-lining over the asset life. Combined with the ITC, these deductions create substantial early tax benefits — a key driver of tax equity demand and returns."
+      },
+      {
+        "question": "What is the energy community ITC adder and who qualifies for it?",
+        "options": [
+          "An additional 20% credit for projects that provide free electricity to low-income households",
+          "An additional 10% credit for projects located in communities that have experienced coal plant closures, significant fossil fuel employment, or meet brownfield site criteria",
+          "A credit available to community solar projects serving residential subscribers",
+          "A bonus for projects developed by locally-owned cooperatives or municipalities"
+        ],
+        "answer": 1,
+        "explanation": "The energy community adder provides an additional 10% ITC for projects in communities historically dependent on fossil fuels — specifically areas with closed coal mines or plants, or census tracts with significant fossil fuel employment. It is one of the most accessible IRA adders and widely claimed in eligible markets."
+      }
+    ]
+  },
+  {
+    "id": "storage-batteries",
+    "title": "Storage & Batteries",
+    "summary": "Battery energy storage fundamentals, chemistries, business models, and project finance",
+    "tag": "Products",
+    "icon": "🔋",
+    "level": "Intermediate",
+    "estimatedMinutes": 9,
+    "keyTakeaways": [
+      "Lithium iron phosphate (LFP) has displaced NMC as the dominant utility storage chemistry due to safety and cycle life",
+      "Stationary storage pack prices hit $70/kWh in 2025 (BNEF) — a 45% single-year drop and a new all-time low",
+      "4-hour BESS projects now qualify for the full 30% ITC under the Inflation Reduction Act"
+    ],
+    "sections": [
+      {
+        "heading": "Battery fundamentals",
+        "body": "A battery energy storage system (BESS) stores electrical energy electrochemically and discharges it on demand. Key parameters include energy capacity (MWh — total energy stored), power capacity (MW — maximum charge/discharge rate), round-trip efficiency (typically 85–93%), cycle life (number of full charge/discharge cycles before significant degradation), and calendar life. Most utility BESS projects are designed for 4-hour duration (e.g., 100 MW / 400 MWh)."
+      },
+      {
+        "heading": "LFP vs. NMC",
+        "body": "Lithium iron phosphate (LFP) and nickel manganese cobalt (NMC) are the two dominant lithium-ion chemistries for grid storage. LFP has largely displaced NMC for utility-scale applications due to superior thermal stability (lower fire risk), longer cycle life (4,000–6,000 cycles vs. 2,000–3,000 for NMC), lower cost per kWh, and reduced cobalt exposure. NMC retains some presence in applications where energy density is critical."
+      },
+      {
+        "heading": "Revenue streams",
+        "body": "Standalone BESS projects typically stack multiple revenue sources: energy arbitrage (buy cheap, sell dear), capacity market payments, ancillary services (frequency regulation, spinning reserve, voltage support), and demand charge management. In deregulated markets (ERCOT, PJM, CAISO), merchant BESS operators compete in ancillary service markets where response time and cycling capability are valued. Contracted storage (behind-the-meter or paired with solar) provides more predictable cash flows."
+      },
+      {
+        "heading": "Solar + storage (BSESS)",
+        "body": "Co-located solar + storage projects (often called BSESS — Battery Storage with Solar) have become the dominant hybrid configuration. The battery can charge from solar generation, shift solar output to higher-value hours, reduce grid curtailment, and provide backup capacity. Under the IRA, co-located storage qualifies for the ITC when charged at least 50% from on-site renewable generation."
+      },
+      {
+        "heading": "Supply chain and pricing",
+        "body": "BESS pack prices have fallen dramatically. According to BNEF's 2025 Lithium-Ion Battery Price Survey, stationary storage pack prices reached $70/kWh in 2025 — a 45% decline from 2024 — making it the lowest-priced battery application segment for the first time. The global average across all li-ion applications is $108/kWh, with LFP averaging $81/kWh. North American prices remain roughly 44% above Chinese levels due to tariffs and lower manufacturing scale. All-in installed BESS costs in the US (including BOS, installation, and interconnection) remain higher than pack prices alone — NREL benchmarks range broadly depending on project size and configuration. Domestic content requirements under the IRA are incentivizing US manufacturing investment."
+      }
+    ],
+    "whyItMatters": "Battery storage is now co-located with solar in a growing share of new projects, and standalone BESS development has become a major asset class in its own right. Understanding storage fundamentals — chemistry tradeoffs, revenue stacking, ITC eligibility, and pricing trends — is essential context for any advisor working on renewable energy transactions or grid infrastructure.",
+    "terms": [
+      {
+        "term": "LFP (Lithium Iron Phosphate)",
+        "definition": "The dominant lithium-ion battery chemistry for grid-scale storage, valued for its safety, long cycle life, and falling cost."
+      },
+      {
+        "term": "Round-trip efficiency",
+        "definition": "The ratio of energy discharged from a battery to the energy required to charge it — typically 85–93% for modern LFP systems."
+      },
+      {
+        "term": "Energy arbitrage",
+        "definition": "A BESS revenue strategy of charging when wholesale electricity prices are low and discharging when prices are high."
+      },
+      {
+        "term": "Duration",
+        "definition": "The number of hours a BESS can discharge at its rated power capacity; 4-hour duration (e.g., 100 MW / 400 MWh) is the current standard for ITC qualification."
+      },
+      {
+        "term": "Ancillary services",
+        "definition": "Grid support services — frequency regulation, spinning reserve, voltage control — that BESS systems can provide and are compensated for in wholesale markets."
+      }
+    ],
+    "chart": {
+      "type": "line",
+      "title": "Li-Ion Battery Pack Price Decline: Global Average vs. Stationary Storage ($/kWh, BNEF)",
+      "xKey": "year",
+      "lines": [
+        {
+          "key": "global",
+          "label": "Global Average (all segments)",
+          "color": "#1B2A4A"
+        },
+        {
+          "key": "stationary",
+          "label": "Stationary Storage (BESS)",
+          "color": "#CC3322"
+        }
+      ],
+      "data": [
+        {
+          "year": "2019",
+          "global": 310,
+          "stationary": null
+        },
+        {
+          "year": "2020",
+          "global": 270,
+          "stationary": null
+        },
+        {
+          "year": "2021",
+          "global": 230,
+          "stationary": null
+        },
+        {
+          "year": "2022",
+          "global": 215,
+          "stationary": 200
+        },
+        {
+          "year": "2023",
+          "global": 160,
+          "stationary": 145
+        },
+        {
+          "year": "2024",
+          "global": 117,
+          "stationary": 128
+        },
+        {
+          "year": "2025",
+          "global": 108,
+          "stationary": 70
+        }
+      ]
+    },
+    "comparison": {
+      "title": "LFP vs. NMC Chemistry Comparison",
+      "headers": [
+        "Attribute",
+        "LFP",
+        "NMC"
+      ],
+      "rows": [
+        [
+          "Cycle life",
+          "4,000–6,000 cycles",
+          "2,000–3,000 cycles"
+        ],
+        [
+          "Thermal stability",
+          "Excellent (safer)",
+          "Moderate (thermal runaway risk)"
+        ],
+        [
+          "Energy density",
+          "Lower",
+          "Higher"
+        ],
+        [
+          "Cost ($/kWh)",
+          "Lower",
+          "Higher"
+        ],
+        [
+          "Cobalt content",
+          "None",
+          "Significant"
+        ],
+        [
+          "Best for",
+          "Grid storage, utility-scale",
+          "EVs, space-constrained apps"
+        ]
+      ],
+      "highlightCol": 1
+    },
+    "quiz": [
+      {
+        "question": "Which battery chemistry now dominates utility-scale storage in the US?",
+        "options": [
+          "NMC (Nickel Manganese Cobalt)",
+          "LFP (Lithium Iron Phosphate)",
+          "Lead-acid",
+          "Vanadium redox flow"
+        ],
+        "answer": 1,
+        "explanation": "LFP has displaced NMC for utility-scale applications due to superior thermal stability, longer cycle life, and lower cost per kWh."
+      },
+      {
+        "question": "What minimum duration does a standalone BESS project need to qualify for the full ITC under the IRA?",
+        "options": [
+          "1 hour",
+          "2 hours",
+          "4 hours",
+          "8 hours"
+        ],
+        "answer": 2,
+        "explanation": "Under the Inflation Reduction Act, standalone BESS projects must have at least 4-hour duration to qualify for the full 30% Investment Tax Credit."
+      },
+      {
+        "question": "What does round-trip efficiency mean and why does it matter for BESS economics?",
+        "options": [
+          "The efficiency of the truck route used to deliver battery modules to the project site",
+          "The ratio of energy discharged from a battery to the energy required to charge it — losses reduce the effective revenue from arbitrage and ancillary services",
+          "The number of full charge-discharge cycles a battery can complete before reaching end of life",
+          "The share of battery capacity available after accounting for reserve margins"
+        ],
+        "answer": 1,
+        "explanation": "Round-trip efficiency (typically 85–93% for LFP) means that for every 1 MWh charged, only 0.85–0.93 MWh is available for discharge. These losses directly reduce arbitrage revenue and must be modeled carefully in BESS financial projections."
+      },
+      {
+        "question": "What is energy arbitrage and what market conditions make it most valuable for a BESS?",
+        "options": [
+          "Selling renewable energy certificates (RECs) when prices are highest",
+          "Charging the battery when wholesale electricity prices are low and discharging when prices are high, profiting from the price spread",
+          "Shifting solar generation to nighttime hours to avoid curtailment",
+          "Trading battery capacity between projects in different grid regions"
+        ],
+        "answer": 1,
+        "explanation": "Energy arbitrage captures the spread between low off-peak and high on-peak wholesale prices. It is most valuable in markets with large daily price spreads — like CAISO or ERCOT — where solar oversupply creates negative or very low midday prices and high evening peak prices."
+      },
+      {
+        "question": "Why has LFP displaced NMC as the dominant chemistry for utility-scale battery storage?",
+        "options": [
+          "LFP has higher energy density, allowing smaller and lighter installations",
+          "LFP offers superior thermal stability, longer cycle life, lower cost per kWh, and no cobalt exposure compared to NMC",
+          "NMC was banned for grid applications due to fire risk in 2023",
+          "LFP qualifies for a higher ITC rate than NMC under the IRA"
+        ],
+        "answer": 1,
+        "explanation": "For stationary storage where energy density is less critical than safety and longevity, LFP's advantages are decisive: it is significantly safer (lower thermal runaway risk), lasts longer (4,000–6,000 cycles vs. 2,000–3,000 for NMC), costs less per kWh, and avoids cobalt supply chain exposure."
+      }
+    ]
+  },
+  {
+    "id": "future-tech",
+    "title": "Future Tech",
+    "summary": "Perovskites, tandem cells, agrivoltaics, and the next generation of solar technology",
+    "tag": "Innovation",
+    "icon": "🚀",
+    "level": "Advanced",
+    "estimatedMinutes": 9,
+    "keyTakeaways": [
+      "Perovskite/silicon tandem cells set a new world record of 36.1% efficiency in 2025 (NREL chart, FhG-ISE/AMOLF)",
+      "Single-junction perovskite cells have exceeded 26% in certified lab tests but face real-world durability barriers",
+      "Agrivoltaics — co-locating solar arrays with agriculture — is gaining traction as a response to land-use constraints"
+    ],
+    "sections": [
+      {
+        "heading": "Perovskite solar cells",
+        "body": "Perovskite solar cells use a class of crystalline materials (typically lead halide perovskites) as the light-absorbing layer. Efficiency has risen from 3% in 2009 to over 26% in research settings by 2025, a rate of progress unprecedented in solar cell history. Key challenges include operational stability (degradation in humidity, heat, and UV exposure), lead content and toxicity concerns, and scale-up from lab cells to commercial modules without efficiency loss."
+      },
+      {
+        "heading": "Tandem cells",
+        "body": "Tandem solar cells layer two different photovoltaic materials to capture a broader spectrum of sunlight. Perovskite-on-silicon tandems are the most commercially advanced configuration. In 2025, FhG-ISE and AMOLF set a new certified world record of 36.1% for a 2-terminal hybrid tandem cell (NREL Best Research-Cell Efficiency Chart, December 2025). Several companies — including Oxford PV, LONGi, and Tandem PV — are pursuing commercialization pathways. Commercial tandem modules reaching 28–30% efficiency could meaningfully reduce land and balance-of-system costs in space-constrained markets."
+      },
+      {
+        "heading": "Agrivoltaics",
+        "body": "Agrivoltaics co-locates solar panels with agricultural land use — either raising panels high enough for crops or livestock to operate beneath, or using bifacial vertical panels in vineyard or orchard configurations. Studies show that shade-tolerant crops (leafy greens, berries, lavender) can thrive under solar panels while land generates dual revenue streams. Several US states have introduced agrivoltaic-friendly permitting frameworks. It is a meaningful response to land-use conflicts that have slowed some large projects."
+      },
+      {
+        "heading": "Floating solar (floatovoltaics)",
+        "body": "Floating solar installs PV panels on water bodies — reservoirs, agricultural ponds, wastewater treatment lagoons. The water surface keeps panels cooler (improving output), reduces evaporation, and avoids land-use conflicts. Japan and Southeast Asia have deployed significant floating capacity; US deployment has accelerated on municipal and agricultural water bodies. Floatovoltaics add complexity to anchoring, cabling, and O&M, but represent a viable niche in land-constrained or water-stressed areas."
+      },
+      {
+        "heading": "Solar in the built environment",
+        "body": "Building-integrated photovoltaics (BIPV) embed solar cells into building materials — roof tiles, facades, windows, and skylights. Tesla Solar Roof is the highest-profile example. Transparent solar cells (luminescent solar concentrators) can generate electricity from windows while maintaining significant visible light transmission. While BIPV costs remain high relative to conventional modules, declining cell costs and architectural integration value could accelerate adoption in premium construction markets."
+      }
+    ],
+    "whyItMatters": "Emerging solar and storage technologies have real implications for long-duration project finance models — today's efficiency benchmarks, cost trajectories, and competitive dynamics may look different in 10–15 years. Understanding where genuine technical progress is occurring versus where expectations are outrunning reality helps advisors stress-test assumptions and evaluate early-stage technology investments more rigorously.",
+    "terms": [
+      {
+        "term": "Perovskite",
+        "definition": "A class of crystalline materials used as the light-absorbing layer in next-generation solar cells, notable for rapid efficiency gains in research settings."
+      },
+      {
+        "term": "Tandem cell",
+        "definition": "A solar cell that stacks two different photovoltaic materials to capture a wider spectrum of sunlight, enabling efficiencies above the single-junction Shockley-Queisser limit."
+      },
+      {
+        "term": "Agrivoltaics",
+        "definition": "The co-location of solar energy generation with agricultural activities on the same land parcel, enabling dual land-use revenue streams."
+      },
+      {
+        "term": "BIPV (Building-Integrated Photovoltaics)",
+        "definition": "Solar cells integrated directly into building materials — roofing, facades, windows — replacing conventional materials rather than being added on top."
+      },
+      {
+        "term": "Shockley-Queisser limit",
+        "definition": "The theoretical maximum efficiency for a single-junction solar cell (~33%), which tandem and multi-junction architectures are designed to exceed."
+      }
+    ],
+    "chart": {
+      "type": "line",
+      "title": "Solar Cell Efficiency Progress: Lab Records by Technology",
+      "xKey": "year",
+      "lines": [
+        {
+          "key": "silicon",
+          "label": "Crystalline Silicon",
+          "color": "#1B2A4A"
+        },
+        {
+          "key": "perovskite",
+          "label": "Perovskite (single junction)",
+          "color": "#CC3322"
+        },
+        {
+          "key": "tandem",
+          "label": "Perovskite/Silicon Tandem",
+          "color": "#16a34a"
+        }
+      ],
+      "data": [
+        {
+          "year": "2012",
+          "silicon": 25,
+          "perovskite": 10,
+          "tandem": null
+        },
+        {
+          "year": "2014",
+          "silicon": 25.6,
+          "perovskite": 17.9,
+          "tandem": null
+        },
+        {
+          "year": "2016",
+          "silicon": 26.3,
+          "perovskite": 22.1,
+          "tandem": 13.7
+        },
+        {
+          "year": "2018",
+          "silicon": 26.7,
+          "perovskite": 23.7,
+          "tandem": 25.2
+        },
+        {
+          "year": "2020",
+          "silicon": 26.7,
+          "perovskite": 25.2,
+          "tandem": 29.1
+        },
+        {
+          "year": "2022",
+          "silicon": 26.8,
+          "perovskite": 25.7,
+          "tandem": 31.3
+        },
+        {
+          "year": "2024",
+          "silicon": 27,
+          "perovskite": 26.1,
+          "tandem": 33.9
+        },
+        {
+          "year": "2025",
+          "silicon": 27.1,
+          "perovskite": 26.4,
+          "tandem": 36.1
+        }
+      ]
+    },
+    "quiz": [
+      {
+        "question": "What is the primary commercialization challenge for perovskite solar cells?",
+        "options": [
+          "They are too expensive to produce at any scale",
+          "They have not achieved sufficient lab efficiency",
+          "Operational stability under real-world conditions of humidity, heat, and UV exposure",
+          "They require extremely rare raw materials"
+        ],
+        "answer": 2,
+        "explanation": "While perovskite cells have achieved impressive lab efficiencies, their primary commercialization challenge is operational stability — they degrade faster than silicon under real-world conditions."
+      },
+      {
+        "question": "What is the primary benefit of tandem (perovskite-on-silicon) solar cells?",
+        "options": [
+          "They are cheaper to manufacture than standard silicon cells",
+          "They capture a broader spectrum of sunlight, enabling efficiencies beyond the single-junction limit",
+          "They require no silicon and thus avoid supply chain risk",
+          "They perform better in cold climates"
+        ],
+        "answer": 1,
+        "explanation": "Tandem cells layer two different light-absorbing materials to capture a broader range of the solar spectrum, enabling efficiencies that exceed what any single material can achieve alone."
+      },
+      {
+        "question": "What is the Shockley-Queisser limit and why is it relevant to next-generation solar?",
+        "options": [
+          "A regulatory cap on the maximum efficiency allowed for commercially sold solar modules",
+          "The theoretical maximum efficiency (~33%) for a single-junction solar cell, which tandem and multi-junction architectures are designed to exceed",
+          "The minimum efficiency standard required to qualify for the federal ITC",
+          "A benchmark for how quickly new solar cell technologies must achieve commercial scale"
+        ],
+        "answer": 1,
+        "explanation": "The Shockley-Queisser limit defines the theoretical maximum power conversion efficiency for a single p-n junction cell (~33%). It arises because photons below the bandgap energy are not absorbed, and those above it lose excess energy as heat. Tandem cells stack multiple junctions with different bandgaps to capture more of the spectrum and push past this limit."
+      },
+      {
+        "question": "What is the primary commercialization barrier for perovskite solar cells despite their rapid efficiency gains?",
+        "options": [
+          "They require extremely rare raw materials that are not available at commercial scale",
+          "Operational stability — perovskites degrade under humidity, heat, and UV exposure, making long-term field performance uncertain",
+          "Their efficiency peaks in laboratory conditions do not transfer to any real-world installation",
+          "Manufacturing processes are patented exclusively by a single company"
+        ],
+        "answer": 1,
+        "explanation": "Perovskite efficiency has risen from 3% in 2009 to over 26% in research settings — a remarkable trajectory. The core barrier is stability: perovskite materials degrade under real-world environmental conditions (moisture, heat, UV), making it difficult to guarantee the 25–30 year operational life that project finance and warranties require."
+      },
+      {
+        "question": "Why might a significant improvement in solar cell efficiency (e.g., from 22% to 28%) matter for utility-scale project economics?",
+        "options": [
+          "Higher efficiency modules qualify for a larger ITC percentage",
+          "More efficient modules generate more power per unit of land and racking, reducing land, BOS, and installation costs per MWh produced",
+          "Efficiency improvements automatically extend module warranty periods",
+          "Grid operators give priority dispatch to higher-efficiency generation sources"
+        ],
+        "answer": 1,
+        "explanation": "Higher module efficiency means more watts per square meter — reducing the number of modules, the amount of racking, the land area, and the associated wiring and installation labor needed for a given project capacity. These BOS savings can meaningfully reduce total installed cost per watt, especially in space-constrained or land-expensive markets."
+      }
+    ]
+  }
+]
